@@ -57,11 +57,19 @@
   // };
 
   behaviors {
+    ZMK_MACRO(mac_comma_scol,
+      wait-ms = <0>;
+      tap-ms = <0>;
+      bindings
+      = <&macro_release &kp LSHFT>
+      , <&macro_tap &kp SEMI>
+      , <&macro_press &kp LSHFT>
+      , <&macro_pause_for_release>;)
     comma: comma_scol {
       compatible = "zmk,behavior-mod-morph";
       label = "COMMA_SCOL";
       #binding-cells = <0>;
-      bindings = <&kp CMMA>, <&kp SEMI>;
+      bindings = <&kp CMMA>, <&mac_comma_scol>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     dot: dot_col {
@@ -87,7 +95,7 @@
     nav_layer {
       bindings = <
         &kp CAPS  &kp RALT  &key_repeat  &key_repeat  &trans    &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &trans 
-        &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT  &trans          &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
+        &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT  &trans          &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
         &kp ESC  &kp TAB 	&kp ENTER  &kp SPC  &kp BKSP          &trans  &kp LG(LEFT)  &caps_word  &kp LG(RIGHT)  &kp DEL 
                                         &trans  &trans          &mo 4  &kp BKSP
       >;
@@ -96,7 +104,7 @@
     symbols_layer {
       bindings = <
         &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp PLUS        &kp MINUS  &kp EQUAL &kp GRAV &kp DQT &kp BSLH 
-        &kp PIPE  &kp AMPS  &kp QMARK  &kp BANG  &kp STAR       &kp FSLH  &kp RSFT  &kp RGUI  &kp RALT  &kp RCTL
+        &kp PIPE  &kp AMPS  &kp QMARK  &kp BANG  &kp STAR       &kp FSLH  &sk RSFT  &sk RGUI  &sk RALT  &sk RCTL
         &kp LT  &kp LBKT  &kp LPAR  &kp LBRC   &kp CRRT         &kp TILDE  &kp RBRC  &kp RPAR  &kp RBKT  &kp GT
                                           &mo 3 &trans          &trans  &trans 
       >;
