@@ -16,87 +16,109 @@
 
 / { 
 
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
-        };
-        
-         combo_tab {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp TAB>;
-        };
-        
-            combo_ralt {
-            timeout-ms = <50>;
-            key-positions = <17 16>;
-            bindings = <&kp RALT>;
-        };
-        
-                    combo_lalt {
-            timeout-ms = <50>;
-            key-positions = <11 12>;
-            bindings = <&kp LALT>;
-        };
-        
-                           combo_lgui {
-            timeout-ms = <50>;
-            key-positions = <12 13>;
-            bindings = <&kp LGUI>;
-        };
-        
-        
-           combo_rgui {
-            timeout-ms = <50>;
-            key-positions = <17 18>;
-            bindings = <&kp RGUI>;
-        };
-        
+  // combos {
+  //     compatible = "zmk,combos";
+  //     combo_esc {
+  //         timeout-ms = <50>;
+  //         key-positions = <0 1>;
+  //         bindings = <&kp ESC>;
+  //     };
+      
+  //      combo_tab {
+  //         timeout-ms = <50>;
+  //         key-positions = <10 11>;
+  //         bindings = <&kp TAB>;
+  //     };
+      
+  //         combo_ralt {
+  //         timeout-ms = <50>;
+  //         key-positions = <17 16>;
+  //         bindings = <&kp RALT>;
+  //     };
+      
+  //                 combo_lalt {
+  //         timeout-ms = <50>;
+  //         key-positions = <11 12>;
+  //         bindings = <&kp LALT>;
+  //     };
+      
+  //                        combo_lgui {
+  //         timeout-ms = <50>;
+  //         key-positions = <12 13>;
+  //         bindings = <&kp LGUI>;
+  //     };
+      
+      
+  //        combo_rgui {
+  //         timeout-ms = <50>;
+  //         key-positions = <17 18>;
+  //         bindings = <&kp RGUI>;
+  //     };  
+  // };
 
-        
+  behaviors {
+    comma: comma_scol {
+      compatible = "zmk,behavior-mod-morph";
+      label = "COMMA_SCOL";
+      #binding-cells = <0>;
+      bindings = <&kp CMMA>, <&kp SEMI>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+    dot: dot_col {
+      compatible = "zmk,behavior-mod-morph";
+      label = "DOT_COL";
+      #binding-cells = <0>;
+      bindings = <&kp DOT>, <&kp COLON>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+  };
+
+  keymap {
+    compatible = "zmk,keymap";
+    default_layer {
+      bindings = <
+        &kp Q  &kp W  &kp E  &kp R  &kp T             &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
+        &kp A  &kp S  &kp D  &kp F  &kp G             &kp H  &kp J  &kp K  &kp L  &kp P
+        &kp Z  &kp X  &kp C  &kp V  &kp B             &kp MINUS  &kp N  &kp M  &comma  &dot
+                        &mo 1  &kp LSFT               &mo 2  &kp SPC  
+      >;
     };
 
-        keymap {
-                compatible = "zmk,keymap";
-                
-       		default_layer {
-		bindings = <
-		&kp Q &kp W &kp E &kp R &kp T 						&kp Y &kp U  &kp I    &kp O   &kp P 
-		&kp A &kp S &kp D &kp F &kp G 			        	        &kp H &kp J &kp K &kp L &kp QUOT
-		&mt LSFT Z &kp X &kp C &kp V &kp B				        &kp N &kp M  &kp CMMA &kp DOT &mt LSFT RET
-          				&mo 1 &kp LCTL  				&kp SPC &mo 2 
-		>;
-		};
+    nav_layer {
+      bindings = <
+        &kp CAPS  &kp RALT  &key_repeat  &key_repeat  &trans    &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &trans 
+        &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT  &trans          &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
+        &kp ESC  &kp TAB 	&kp ENTER  &kp SPC  &kp BKSP          &trans  &kp LG(LEFT)  &caps_word  &kp LG(RIGHT)  &kp DEL 
+                                        &trans  &trans          &mo 4  &kp BKSP
+      >;
+    };
+      
+    symbols_layer {
+      bindings = <
+        &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp PLUS        &kp MINUS  &kp EQUAL &kp GRAV &kp DQT &kp BSLH 
+        &kp PIPE  &kp AMPS  &kp QMARK  &kp BANG  &kp STAR       &kp FSLH  &kp RSFT  &kp RGUI  &kp RALT  &kp RCTL
+        &kp LT  &kp LBKT  &kp LPAR  &kp LBRC   &kp CRRT         &kp TILDE  &kp RBRC  &kp RPAR  &kp RBKT  &kp GT
+                                          &mo 3 &trans          &trans  &trans 
+      >;
+    };	
+      
+    number_layer {
+      bindings = <
+        &kp CAPS  &kp RALT  &key_repeat  &key_repeat  &kp PLUS      &kp MINUS  &kp N1  &kp N2  &kp N3  &kp CMMA
+        &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT  &kp STAR            &kp FSLH  &kp N4  &kp N5  &kp N6  &kp ENTER 
+        &kp ESC  &kp TAB 	&kp ENTER  &kp SPC  &kp BKSP              &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp DOT   
+                                        &trans  &trans              &kp N0 &kp BKSP
+      >;
+    };	
 
-       		left_layer {
-		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5		&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
-		&kp TAB    &kp LC(S)    &kp DQT      &kp PIPE2     &kp HASH 		&kp MINUS &kp EQL  &kp LBKT &kp RBKT  &kp DEL 
-		&kp ESC    &kp TILDE 	&kp NON_US_BSLH &kp NON_US_HASH  &kp TILDE2 	&kp MINUS &kp GRAVE &kp LBKT &kp RBKT  &kp DEL 
-					    &mo 1  &kp LGUI  					&kp RGUI &mo 2 
-		>;
-		};
-		
-		right_layer {
-		bindings = <
-		&kp BANG  &kp ATSN &kp HASH  &kp DLLR  &kp PRCT    			&kp CRRT  &kp AMPS &kp KMLT &kp LPRN &kp RPRN 
-		&kp HASH  &kp QMARK  &kp FSLH  &kp COLN  &kp SCLN 			&kp MINUS &kp KP_EQUAL  &kp LBRC  &kp RBRC   &kp BKSP
-		&kp LSFT  &kp KPLS &kp LBKT &kp RBKT   &kp BSLH    			&kp UNDER &kp LEFT &kp DOWN &kp UP  &kp RIGHT
-					  &mo 3 &kp LCTL  				&kp SPC  &mo 2 
-		>;
-		};	
-		
-		tri_layer {
-		bindings = <
-		&kp NUM_1  &kp NUM_2    &kp NUM_3    &kp NUM_4    &kp NUM_5 			&trans &trans   &trans   &trans  &trans
-		&kp F1 &kp F2 &kp F3 &kp F4 &kp F5  						&trans &kp PG_UP  &kp K_VOL_UP &kp K_MUTE &trans 
-		&bt BT_CLR  &bt BT_NXT &bt BT_PRV &kp F6 &kp F7   				&trans &kp PG_DN  &kp K_VOL_DN  &trans &trans   
-					 &trans &trans  					&trans &trans 
-		>;
-		};	
-        
-	};
+    media_layer {
+      bindings = <
+        &kp F1  &kp F2  &kp F3  &kp F4  &bt BT_NXT          &kp C_BRI_UP  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &bootloader
+        &kp F5  &kp F6  &kp F7  &kp F8  &bt BT_PRV          &kp C_BRI_DN  &kp LSFT  &kp LGUI  &kp LALT  &kp LCTL 
+        &kp F9  &kp F10 	&kp F11  &kp F12  &trans          &trans  &kp C_PREV  &kp C_PP  &kp C_NEXT  &trans   
+                                      &to 0  &trans         &kp BKSP &kp N0
+      >;
+    };	
+          
+  };
 };
