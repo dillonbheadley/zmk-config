@@ -97,9 +97,9 @@
 
     nav_layer {
       bindings = <
-        &kp CAPS  &kp RALT  &caps_word  &key_repeat  &reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &reset 
+        &kp CAPS  &kp RALT  &key_repeat  &caps_word  &reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &reset 
         &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT  &trans          &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
-        &kp ESC  &kp TAB 	&kp ENTER  &kp SPC  &kp BKSP          &trans  &kp LG(LEFT)  &caps_word  &kp LG(RIGHT)  &kp DEL 
+        &kp ESC  &kp TAB 	&kp ENTER  &kp SPC  &kp BKSP          &trans  &kp LG(LEFT)  &key_repeat  &kp LG(RIGHT)  &kp DEL 
                                         &trans  &trans          &mo 4  &kp BKSP
       >;
     };
@@ -115,7 +115,7 @@
       
     number_layer {
       bindings = <
-        &kp CAPS  &kp RALT  &caps_word  &key_repeat  &kp PLUS       &kp MINUS  &kp N1  &kp N2  &kp N3  &kp CMMA
+        &kp CAPS  &kp RALT  &key_repeat  &caps_word  &kp PLUS       &kp MINUS  &kp N1  &kp N2  &kp N3  &kp CMMA
         &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT  &kp STAR            &kp FSLH  &kp N4  &kp N5  &kp N6  &kp ENTER 
         &kp ESC  &kp TAB 	&kp ENTER  &kp SPC  &kp BKSP              &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp DOT   
                                         &trans  &trans              &kp N0 &kp BKSP
