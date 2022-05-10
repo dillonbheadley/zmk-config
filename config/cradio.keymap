@@ -13,6 +13,9 @@
   //  flavor = "tap-preferred";
    // tapping_term_ms = <200>;
 };
+&sk {
+  quick-release;
+};
 
 / { 
 
@@ -88,13 +91,13 @@
         &kp Q  &kp W  &kp E  &kp R  &kp T             &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
         &kp A  &kp S  &kp D  &kp F  &kp G             &kp H  &kp J  &kp K  &kp L  &kp P
         &kp Z  &kp X  &kp C  &kp V  &kp B             &kp MINUS  &kp N  &kp M  &comma  &dot
-                        &mo 1  &kp LSFT               &mo 2  &kp SPC  
+                        &mo 1  &mo 3                  &mo 2  &kp SPC  
       >;
     };
 
     nav_layer {
       bindings = <
-        &kp CAPS  &kp RALT  &key_repeat  &key_repeat  &trans    &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &trans 
+        &kp CAPS  &kp RALT  &caps_word  &key_repeat  &reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &reset 
         &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT  &trans          &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
         &kp ESC  &kp TAB 	&kp ENTER  &kp SPC  &kp BKSP          &trans  &kp LG(LEFT)  &caps_word  &kp LG(RIGHT)  &kp DEL 
                                         &trans  &trans          &mo 4  &kp BKSP
@@ -112,7 +115,7 @@
       
     number_layer {
       bindings = <
-        &kp CAPS  &kp RALT  &key_repeat  &key_repeat  &kp PLUS      &kp MINUS  &kp N1  &kp N2  &kp N3  &kp CMMA
+        &kp CAPS  &kp RALT  &caps_word  &key_repeat  &kp PLUS       &kp MINUS  &kp N1  &kp N2  &kp N3  &kp CMMA
         &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT  &kp STAR            &kp FSLH  &kp N4  &kp N5  &kp N6  &kp ENTER 
         &kp ESC  &kp TAB 	&kp ENTER  &kp SPC  &kp BKSP              &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp DOT   
                                         &trans  &trans              &kp N0 &kp BKSP
