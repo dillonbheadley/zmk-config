@@ -111,10 +111,10 @@
       
     symbols_layer {
       bindings = <
-        &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp STAR        &kp FSLH  &kp UNDER &kp GRAV &kp TILDE &kp DQT
-        &kp PIPE  &kp AMPS  &kp QMARK  &kp BANG  &kp PLUS       &kp COLON  &kp MINUS  &kp EQUAL  &kp DQT  &kp SEMI
+        &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp STAR        &kp FSLH  &kp QUOT &kp GRAV &kp TILDE &kp DQT
+        &kp PIPE  &kp AMPS  &kp QMARK  &kp BANG  &kp PLUS       &kp COLON  &kp MINUS  &kp UNDER  &kp EQUAL  &kp SEMI
         &kp LT  &kp LBKT  &kp LPAR  &kp LBRC  &kp CRRT          &kp BSLH  &kp RBRC  &kp RPAR  &kp RBKT  &kp GT
-                                          &mo 4 &kp DOT         &trans  &trans 
+                                          &mo 4 &kp SPC         &trans  &trans 
       >;
     };	
       
