@@ -78,7 +78,7 @@
         &kp CAPS  &kp RALT  &key_repeat  &caps_word  &reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &trans 
         &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT  &to 1           &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
         &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP          &to 0  &kp LG(LEFT)  &key_repeat  &kp LG(RIGHT)  &kp DEL 
-                                        &trans  &trans          &mo 4  &kp BKSP
+                                        &trans  &trans          &mo 5  &kp BKSP
       >;
     };
       
