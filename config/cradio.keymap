@@ -51,7 +51,7 @@
   //     bindings = <&kp FSLH>, <&mac_slashes>;
   //     mods = <(MOD_LSFT|MOD_RSFT)>;
   //   };
-  };
+  // };
 
   keymap {
     compatible = "zmk,keymap";
