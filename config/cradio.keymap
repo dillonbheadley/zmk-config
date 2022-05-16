@@ -23,34 +23,34 @@
   //     };
   // };
 
-  behaviors {
-    ZMK_MACRO(mac_slashes,
-      wait-ms = <0>;
-      tap-ms = <0>;
-      bindings
-      = <&macro_release &kp LSHFT>
-      , <&macro_tap &kp BSLH>;)
-    comma: comma_shifted {
-      compatible = "zmk,behavior-mod-morph";
-      label = "COMMA_SHIFTED";
-      #binding-cells = <0>;
-      bindings = <&kp CMMA>, <&kp CRRT>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    dot: dot_shifted {
-      compatible = "zmk,behavior-mod-morph";
-      label = "DOT_SHIFTED";
-      #binding-cells = <0>;
-      bindings = <&kp DOT>, <&kp TILDE>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    slash: slash_shifted {
-      compatible = "zmk,behavior-mod-morph";
-      label = "SLASH_SHIFTED";
-      #binding-cells = <0>;
-      bindings = <&kp FSLH>, <&mac_slashes>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+  // behaviors {
+  //   ZMK_MACRO(mac_slashes,
+  //     wait-ms = <0>;
+  //     tap-ms = <0>;
+  //     bindings
+  //     = <&macro_release &kp LSHFT>
+  //     , <&macro_tap &kp BSLH>;)
+  //   comma: comma_shifted {
+  //     compatible = "zmk,behavior-mod-morph";
+  //     label = "COMMA_SHIFTED";
+  //     #binding-cells = <0>;
+  //     bindings = <&kp CMMA>, <&kp CRRT>;
+  //     mods = <(MOD_LSFT|MOD_RSFT)>;
+  //   };
+  //   dot: dot_shifted {
+  //     compatible = "zmk,behavior-mod-morph";
+  //     label = "DOT_SHIFTED";
+  //     #binding-cells = <0>;
+  //     bindings = <&kp DOT>, <&kp TILDE>;
+  //     mods = <(MOD_LSFT|MOD_RSFT)>;
+  //   };
+  //   slash: slash_shifted {
+  //     compatible = "zmk,behavior-mod-morph";
+  //     label = "SLASH_SHIFTED";
+  //     #binding-cells = <0>;
+  //     bindings = <&kp FSLH>, <&mac_slashes>;
+  //     mods = <(MOD_LSFT|MOD_RSFT)>;
+  //   };
   };
 
   keymap {
@@ -59,7 +59,7 @@
       bindings = <
         &kp Q  &kp W  &kp E  &kp R  &kp T             &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
         &kp A  &kp S  &kp D  &kp F  &kp G             &kp H  &kp J  &kp K  &kp L  &kp P
-        &kp Z  &kp X  &kp C  &kp V  &kp B             &kp N  &kp M  &comma  &dot  &slash
+        &kp Z  &kp X  &kp C  &kp V  &kp B             &kp N  &kp M  &kp CMMA  &kp DOT  &kp FSLH
                              &mo 2  &mo 4             &mo 3  &kp SPC  
       >;
     };
@@ -68,7 +68,7 @@
       bindings = <
         &kp Q  &kp W  &kp F  &kp P  &kp B             &kp J  &kp L  &kp U  &kp Y  &kp QUOT 
         &kp A  &kp R  &kp S  &kp T  &kp G             &kp M  &kp N  &kp E  &kp I  &kp O
-        &kp Z  &kp X  &kp C  &kp D  &kp V             &kp K  &kp H  &comma  &dot  &slash
+        &kp Z  &kp X  &kp C  &kp D  &kp V             &kp K  &kp H  &kp CMMA  &kp DOT  &kp FSLH
                              &mo 2  &mo 4             &mo 3  &kp SPC  
       >;
     };
@@ -84,9 +84,9 @@
       
     symbols_layer {
       bindings = <
-        &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp STAR        &kp FSLH  &kp QUOT &kp GRAV &kp TILDE &kp DQT
+        &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp STAR        &kp BSLH  &kp DQT &kp GRAV &kp TILDE &trans
         &kp PIPE  &kp AMPS  &kp QMARK  &kp BANG  &kp PLUS       &kp COLON  &kp MINUS  &kp UNDER  &kp EQUAL  &kp SEMI
-        &kp LT  &kp LBKT  &kp LPAR  &kp LBRC  &kp CRRT          &kp BSLH  &kp RBRC  &kp RPAR  &kp RBKT  &kp GT
+        &kp LT  &kp LBKT  &kp LPAR  &kp LBRC  &kp CRRT          &kp FSLH  &kp RBRC  &kp RPAR  &kp RBKT  &kp GT
                                         &mo 5 &kp LSFT          &trans  &trans 
       >;
     };	
