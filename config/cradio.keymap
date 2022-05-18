@@ -8,6 +8,14 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define DEFAULT 0
+#define COLE 1
+#define APT 2
+#define NAV 3
+#define SYMB 4
+#define NUMB 5
+#define MEDIA 6
+
 &sk {
   quick-release;
 };
@@ -60,7 +68,7 @@
         &kp Q  &kp W  &kp E  &kp R  &kp T             &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
         &kp A  &kp S  &kp D  &kp F  &kp G             &kp H  &kp J  &kp K  &kp L  &kp P
         &kp Z  &kp X  &kp C  &kp V  &kp B             &kp N  &kp M  &kp CMMA  &kp DOT  &kp FSLH
-                             &mo 2  &mo 4             &mo 3  &kp SPC  
+                        &mo NAV  &mo NUMB             &mo SYMB  &kp SPC  
       >;
     };
 
@@ -69,16 +77,25 @@
         &kp Q  &kp W  &kp F  &kp P  &kp B             &kp J  &kp L  &kp U  &kp Y  &kp QUOT 
         &kp A  &kp R  &kp S  &kp T  &kp G             &kp M  &kp N  &kp E  &kp I  &kp O
         &kp Z  &kp X  &kp C  &kp D  &kp V             &kp K  &kp H  &kp CMMA  &kp DOT  &kp FSLH
-                             &mo 2  &mo 4             &mo 3  &kp SPC  
+                        &mo NAV  &mo NUMB             &mo SYMB  &kp SPC  
+      >;
+    };
+
+    apt_layer {
+      bindings = <
+        &kp Q  &kp G  &kp D  &kp F  &kp B             &kp Y  &kp L  &kp U  &kp O  &kp QUOT 
+        &kp R  &kp S  &kp T  &kp H  &kp K             &kp J  &kp N  &kp E  &kp A  &kp I
+        &kp X  &kp C  &kp M  &kp P  &kp V             &kp Z  &kp W  &kp CMMA  &kp DOT  &kp FSLH
+                        &mo NAV  &mo NUMB             &mo SYMB  &kp SPC  
       >;
     };
 
     nav_layer {
       bindings = <
-        &kp CAPS  &kp RALT  &key_repeat  &caps_word  &reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &to 6 
-        &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT  &to 1           &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
-        &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP          &to 0  &kp LG(LEFT)  &key_repeat  &kp LG(RIGHT)  &kp DEL 
-                                        &trans  &trans          &mo 5  &kp BKSP
+        &kp CAPS  &kp RALT  &key_repeat  &caps_word  &reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &to APT 
+        &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT  &to COLE        &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
+        &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP          &to DEFAULT  &kp LG(LEFT)  &key_repeat  &kp LG(RIGHT)  &kp DEL 
+                                        &trans  &trans          &mo MEDIA  &kp BKSP
       >;
     };
       
@@ -87,7 +104,7 @@
         &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp STAR        &kp BSLH  &kp DQT &kp GRAV &kp TILDE &trans
         &kp PIPE  &kp AMPS  &kp QMARK  &kp BANG  &kp PLUS       &kp COLON  &kp MINUS  &kp UNDER  &kp EQUAL  &kp SEMI
         &kp LT  &kp LBKT  &kp LPAR  &kp LBRC  &kp CRRT          &kp FSLH  &kp RBRC  &kp RPAR  &kp RBKT  &kp GT
-                                        &mo 5 &kp LSFT          &trans  &trans 
+                                    &mo MEDIA &kp LSFT          &trans  &trans 
       >;
     };	
       
@@ -108,14 +125,5 @@
                                     &trans  &trans          &trans &kp BKSP
       >;
     };	
-
-    apt_layer {
-      bindings = <
-        &kp Q  &kp G  &kp D  &kp F  &kp B             &kp Y  &kp L  &kp U  &kp O  &kp QUOT 
-        &kp R  &kp S  &kp T  &kp H  &kp K             &kp J  &kp N  &kp E  &kp A  &kp I
-        &kp X  &kp C  &kp M  &kp P  &kp V             &kp Z  &kp W  &kp CMMA  &kp DOT  &kp FSLH
-                             &mo 2  &mo 4             &mo 3  &kp SPC  
-      >;
-    };
   };
 };
