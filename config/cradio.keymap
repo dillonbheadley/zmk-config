@@ -10,7 +10,7 @@
 
 #define DEFAULT 0
 #define COLE 1
-#define APT 2
+#define EXP 2
 #define NAV 3
 #define SYMB 4
 #define NUMB 5
@@ -81,18 +81,18 @@
       >;
     };
 
-    apt_layer {
+    exp_layer {
       bindings = <
-        &kp Q  &kp G  &kp D  &kp F  &kp B             &kp Y  &kp L  &kp U  &kp O  &kp QUOT 
-        &kp R  &kp S  &kp T  &kp H  &kp K             &kp J  &kp N  &kp E  &kp A  &kp I
-        &kp X  &kp C  &kp M  &kp P  &kp V             &kp Z  &kp W  &kp CMMA  &kp DOT  &kp FSLH
+        &kp X  &kp G  &kp C  &kp B  &kp K             &kp V  &kp P  &kp U  &kp O  &kp Q 
+        &kp A  &kp S  &kp T  &kp H  &kp CMMA          &kp DOT  &kp N  &kp R  &kp E  &kp I
+        &kp QUOT  &kp Y  &kp W  &kp L  &kp Z          &kp FSLH  &kp F  &kp D  &kp J  &kp M
                         &mo NAV  &mo NUMB             &mo SYMB  &kp SPC  
       >;
     };
 
     nav_layer {
       bindings = <
-        &kp CAPS  &kp RALT  &key_repeat  &caps_word  &reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &to APT 
+        &kp CAPS  &kp RALT  &key_repeat  &caps_word  &reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &to EXP 
         &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT  &to COLE        &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
         &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP          &to DEFAULT  &kp LG(LEFT)  &key_repeat  &kp LG(RIGHT)  &kp DEL 
                                         &trans  &trans          &mo MEDIA  &kp BKSP
