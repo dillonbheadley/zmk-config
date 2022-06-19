@@ -27,7 +27,7 @@
       combo_o {
           timeout-ms = <50>;
           key-positions = <25 23>;
-          bindings = <RC(0,18)>;
+          bindings = <RC(18)>;
       };
   };
 
