@@ -27,8 +27,15 @@
       combo_o {
           timeout-ms = <50>;
           key-positions = <25 23>;
-          bindings = <RC(18)>;
+          bindings = <&kp O>;
+          layers = <DEFAULT>
       };
+      combo_3 {
+          timeout-ms = <50>;
+          key-positions = <25 23>;
+          bindings = <&kp N3>;
+          layers = <NUMB>
+      };      
   };
 
   // behaviors {
