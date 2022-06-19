@@ -26,13 +26,13 @@
       compatible = "zmk,combos";
       combo_o {
           timeout-ms = <50>;
-          key-positions = <23 25>;
+          key-positions = <17 19>;
           bindings = <&kp O>;
           layers = <DEFAULT>;
       };
       combo_3 {
           timeout-ms = <50>;
-          key-positions = <23 25>;
+          key-positions = <17 19>;
           bindings = <&kp N3>;
           layers = <NUMB>;
       };      
