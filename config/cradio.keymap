@@ -9,12 +9,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define COLE 1
-#define EXP 2
-#define NAV 3
-#define SYMB 4
-#define NUMB 5
-#define MEDIA 6
+#define ALT 1
+#define NAV 2
+#define SYMB 3
+#define NUMB 4
+#define MEDIA 5
 
 &sk {
   quick-release;
@@ -35,7 +34,13 @@
           key-positions = <17 18>;
           bindings = <&kp N3>;
           layers = <NUMB>;
-      };      
+      };
+      combo_caps {
+          timeout-ms = <50>;
+          key-positions = <12 13>;
+          bindings = <&kp CAPS>;
+          layers = <DEFAULT>;
+      };
   };
 
   // behaviors {
@@ -79,7 +84,7 @@
       >;
     };
 
-    colemak_layer {
+    alt_layer {
       bindings = <
         &kp Q  &kp W  &kp F  &kp P  &kp B             &kp J  &kp L  &kp U  &kp Y  &kp QUOT 
         &kp A  &kp R  &kp S  &kp T  &kp G             &kp M  &kp N  &kp E  &kp I  &kp O
@@ -88,19 +93,10 @@
       >;
     };
 
-    exp_layer {
-      bindings = <
-        &kp X  &kp G  &kp C  &kp B  &kp K             &kp V  &kp P  &kp U  &kp O  &kp Q 
-        &kp A  &kp S  &kp T  &kp H  &kp CMMA          &kp DOT  &kp N  &kp R  &kp E  &kp I
-        &kp QUOT  &kp Y  &kp W  &kp L  &kp Z          &kp FSLH  &kp F  &kp D  &kp J  &kp M
-                        &mo NAV  &mo NUMB             &mo SYMB  &kp SPC  
-      >;
-    };
-
     nav_layer {
       bindings = <
-        &kp CAPS  &kp RALT  &key_repeat  &caps_word  &reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &to EXP 
-        &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT  &to COLE        &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
+        &kp CAPS  &kp RALT  &key_repeat  &caps_word  &reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &trans 
+        &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT  &to ALT         &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
         &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP          &to DEFAULT  &kp LG(LEFT)  &key_repeat  &kp LG(RIGHT)  &kp DEL 
                                         &trans  &trans          &mo MEDIA  &kp BKSP
       >;
@@ -111,7 +107,7 @@
         &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp STAR        &kp BSLH  &kp DQT &kp GRAV &kp TILDE &trans
         &kp PIPE  &kp AMPS  &kp QMARK  &kp BANG  &kp PLUS       &kp COLON  &kp MINUS  &kp UNDER  &kp EQUAL  &kp SEMI
         &kp LT  &kp LBKT  &kp LPAR  &kp LBRC  &kp CRRT          &kp FSLH  &kp RBRC  &kp RPAR  &kp RBKT  &kp GT
-                                    &mo MEDIA &kp LSFT          &trans  &trans 
+                                    &kp LGUI &kp LSFT           &trans  &kp BKSP 
       >;
     };	
       
