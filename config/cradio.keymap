@@ -27,19 +27,19 @@
           timeout-ms = <50>;
           key-positions = <17 18>;
           bindings = <&key_repeat>;
-          layers = <DEFAULT>;
+          layers = <DEFAULT ALT>;
       };
       combo_capsw {
           timeout-ms = <50>;
           key-positions = <16 17>;
           bindings = <&caps_word>;
-          layers = <DEFAULT>;
+          layers = <DEFAULT ALT>;
       };
       combo_caps {
           timeout-ms = <50>;
           key-positions = <12 13>;
           bindings = <&kp CAPS>;
-          layers = <DEFAULT>;
+          layers = <DEFAULT ALT>;
       };
   };
 
@@ -86,9 +86,9 @@
 
     alt_layer {
       bindings = <
-        &kp Q  &kp W  &kp F  &kp P  &kp B             &kp J  &kp L  &kp U  &kp Y  &kp QUOT 
-        &kp A  &kp R  &kp S  &kp T  &kp G             &kp M  &kp N  &kp E  &kp I  &kp O
-        &kp Z  &kp X  &kp C  &kp D  &kp V             &kp K  &kp H  &kp CMMA  &kp DOT  &kp FSLH
+        &kp Q  &kp W  &kp D  &kp F  &kp G             &kp Y  &kp U  &kp K  &kp L  &kp QUOT 
+        &kp A  &kp S  &kp E  &kp R  &kp T             &kp H  &kp N  &kp I  &kp O  &kp P
+        &kp Z  &kp X  &kp C  &kp V  &kp B             &kp J  &kp M  &kp CMMA  &kp DOT  &kp FSLH
                         &mo NAV  &mo NUMB             &mo SYMB  &kp SPC  
       >;
     };
