@@ -18,9 +18,10 @@
 &sk {
   quick-release;
 };
+
 &lt {
   flavor = "hold-preferred";
-)
+};
 
 / { 
 
