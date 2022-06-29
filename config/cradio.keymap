@@ -90,7 +90,7 @@
         &kp Q  &kp W  &kp E  &kp R  &kp T             &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
         &kp A  &kp S  &kp D  &kp F  &kp G             &kp H  &kp J  &kp K  &kp L  &kp P
         &kp Z  &kp X  &kp C  &kp V  &kp B             &kp N  &kp M  &kp CMMA  &kp DOT  &kp FSLH
-                    &mo NAV  &ml NUMB LSFT            &mo SYMB  &kp SPC  
+                &ml NAV LGUI  &ml NUMB LSFT           &lt SYMB ENTER  &kp SPC  
       >;
     };
 
@@ -99,7 +99,7 @@
         &kp Q  &kp W  &kp D  &kp F  &kp G             &kp Y  &kp U  &kp K  &kp L  &kp QUOT 
         &kp A  &kp S  &kp E  &kp R  &kp T             &kp H  &kp N  &kp I  &kp O  &kp P
         &kp Z  &kp X  &kp C  &kp V  &kp B             &kp J  &kp M  &kp CMMA  &kp DOT  &kp FSLH
-                        &mo NAV  &mo NUMB             &mo SYMB  &kp SPC  
+                &ml NAV LGUI  &ml NUMB LSFT           &lt SYMB ENTER  &kp SPC  
       >;
     };
 
