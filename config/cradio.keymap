@@ -36,6 +36,7 @@
           timeout-ms = <50>;
           key-positions = <12 13>;
           bindings = <&sk LGUI>;
+          layers = <DEFAULT ALT SYMB>;
       };
       combo_shift {
           timeout-ms = <50>;
