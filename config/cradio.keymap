@@ -27,14 +27,14 @@
 
   combos {
       compatible = "zmk,combos";
-      combo_repeat {
+      combo_caps {
           timeout-ms = <50>;
-          key-positions = <27 28>;
-          bindings = <&key_repeat>;
+          key-positions = <21 22>;
+          bindings = <&kp CAPS>;
       };
       combo_cmd {
           timeout-ms = <50>;
-          key-positions = <21 22>;
+          key-positions = <12 13>;
           bindings = <&sk LGUI>;
       };
       combo_shift {
@@ -47,10 +47,10 @@
           key-positions = <16 17>;
           bindings = <&caps_word>;
       };
-      combo_caps {
+      combo_repeat {
           timeout-ms = <50>;
-          key-positions = <12 13>;
-          bindings = <&kp CAPS>;
+          key-positions = <27 28>;
+          bindings = <&key_repeat>;
       };
   };
   
