@@ -119,7 +119,7 @@
       bindings = <
         &kp CAPS  &kp RALT  &key_repeat  &caps_word  &reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &trans 
         &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT  &to ALT         &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
-        &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP          &to DEFAULT  &kp LG(LEFT)  &key_repeat  &kp LG(RIGHT)  &kp DEL 
+        &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP          &to DEFAULT  &kp LG(LEFT)  &kp LC(MINUS)  &kp LG(RIGHT)  &kp DEL 
                                         &trans  &trans          &mo MEDIA  &kp BKSP
       >;
     };
