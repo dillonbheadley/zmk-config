@@ -32,6 +32,11 @@
           key-positions = <27 28>;
           bindings = <&key_repeat>;
       };
+      combo_cmd {
+          timeout-ms = <50>;
+          key-positions = <21 22>;
+          bindings = <&sk LGUI>;
+      };
       combo_shift {
           timeout-ms = <50>;
           key-positions = <17 18>;
