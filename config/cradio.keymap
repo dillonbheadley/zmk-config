@@ -77,28 +77,9 @@
   //     tap-ms = <0>;
   //     bindings
   //     = <&macro_release &kp LSHFT>
-  //     , <&macro_tap &kp BSLH>;)
-  //   comma: comma_shifted {
-  //     compatible = "zmk,behavior-mod-morph";
-  //     label = "COMMA_SHIFTED";
-  //     #binding-cells = <0>;
-  //     bindings = <&kp CMMA>, <&kp CRRT>;
-  //     mods = <(MOD_LSFT|MOD_RSFT)>;
-  //   };
-  //   dot: dot_shifted {
-  //     compatible = "zmk,behavior-mod-morph";
-  //     label = "DOT_SHIFTED";
-  //     #binding-cells = <0>;
-  //     bindings = <&kp DOT>, <&kp TILDE>;
-  //     mods = <(MOD_LSFT|MOD_RSFT)>;
-  //   };
-  //   slash: slash_shifted {
-  //     compatible = "zmk,behavior-mod-morph";
-  //     label = "SLASH_SHIFTED";
-  //     #binding-cells = <0>;
-  //     bindings = <&kp FSLH>, <&mac_slashes>;
-  //     mods = <(MOD_LSFT|MOD_RSFT)>;
-  //   };
+  //     , <&macro_tap &kp BSLH>;
+  //   )
+
   
   };
 
@@ -115,9 +96,9 @@
 
     alt_layer {
       bindings = <
-        &kp Q  &kp W  &kp D  &kp F  &kp G             &kp Y  &kp U  &kp K  &kp L  &kp QUOT 
-        &kp A  &kp S  &kp E  &kp R  &kp T             &kp H  &kp N  &kp I  &kp O  &kp P
-        &kp Z  &kp X  &kp C  &kp V  &kp B             &kp J  &kp M  &kp CMMA  &kp DOT  &kp FSLH
+        &kp W  &kp L  &kp Y  &kp P  &kp B             &kp Z  &kp F  &kp O  &kp U  &kp QUOT 
+        &kp C  &kp R  &kp S  &kp T  &kp G             &kp M  &kp N  &kp E  &kp I  &kp A
+        &kp Q  &kp J  &kp V  &kp D  &kp K             &kp X  &kp H  &kp FSLH  &kp CMMA  &kp DOT
                 &ml NAV LGUI  &ml NUMB LSFT           &mo SYMB  &kp SPC  
       >;
     };
