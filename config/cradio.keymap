@@ -60,6 +60,11 @@
           key-positions = <21 22>;
           bindings = <&key_repeat>;
       };
+      combo_enter {
+          timeout-ms = <50>;
+          key-positions = <28 29>;
+          bindings = <&kp ENTER>;
+      };
   };
   
   behaviors {
