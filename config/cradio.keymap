@@ -104,7 +104,7 @@
         &kp W  &kp L  &kp Y  &kp P  &kp B             &kp Z  &kp F  &kp O  &kp U  &kp QUOT 
         &kp C  &kp R  &kp S  &kp T  &kp G             &kp M  &kp N  &kp E  &kp I  &kp A
         &kp Q  &kp J  &kp V  &kp D  &kp K             &kp X  &kp H  &kp FSLH  &kp CMMA  &kp DOT
-                &ml NAV LGUI  &ml NUMB LSFT           &mo SYMB  &kp SPC  
+                &ml NAV LGUI  &ml NUMB LSFT           &mo SYMB  &kp SPC
       >;
     };
 
@@ -113,7 +113,7 @@
         &kp CAPS  &kp RALT  &key_repeat  &caps_word  &reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &trans 
         &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT  &to ALT         &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
         &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP          &to DEFAULT  &kp LG(LEFT)  &kp LC(MINUS)  &kp LG(RIGHT)  &kp DEL 
-                                        &trans  &trans          &mo MEDIA  &kp BKSP
+                                        &trans  &kp LGUI        &mo MEDIA  &kp BKSP
       >;
     };
       
@@ -122,7 +122,7 @@
         &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp STAR        &kp BSLH  &kp DQT &kp GRAV &kp TILDE &trans
         &kp PIPE  &kp AMPS  &kp QMARK  &kp BANG  &kp PLUS       &kp COLON  &kp MINUS  &kp UNDER  &kp EQUAL  &kp SEMI
         &kp LT  &kp LBKT  &kp LPAR  &kp LBRC  &kp CRRT          &kp FSLH  &kp RBRC  &kp RPAR  &kp RBKT  &kp GT
-                                    &kp LGUI &kp LSFT           &trans  &kp BKSP 
+                                    &kp LSFT  &kp LGUI          &trans  &kp ENTER 
       >;
     };	
       
