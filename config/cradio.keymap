@@ -16,6 +16,7 @@
 #define MEDIA 5
 
 &sk {
+  release-after-ms = <500>;
   quick-release;
 };
 
