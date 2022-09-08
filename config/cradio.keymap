@@ -80,7 +80,7 @@
     td_mt: tap_dance_mod_layer {
       compatible = "zmk,behavior-tap-dance";
       label = "TAP_DANCE_MOD_LAYER";
-      #binding-cells = <2>;
+      #binding-cells = <3>;
       tapping-term-ms = <200>;
       bindings = <&ml>, <&kp>;
     };
