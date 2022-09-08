@@ -77,7 +77,13 @@
       tapping-term-ms = <150>;
       bindings = <&mo>, <&sk>;
     };
-
+    td_mt: tap_dance_mod_layer {
+      compatible = "zmk,behavior-tap-dance";
+      label = "TAP_DANCE_MOD_LAYER";
+      #binding-cells = <2>;
+      tapping-term-ms = <200>;
+      bindings = <&ml>, <&kp>;
+    };
   //   ZMK_MACRO(mac_slashes,
   //     wait-ms = <0>;
   //     tap-ms = <0>;
@@ -96,7 +102,7 @@
         &kp Q  &kp W  &kp E  &kp R  &kp T         &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
         &kp A  &kp S  &kp D  &kp F  &kp G         &kp H  &kp J  &kp K  &kp L  &kp P
         &kp Z  &kp X  &kp C  &kp V  &kp B         &kp N  &kp M  &kp CMMA  &kp DOT  &kp FSLH
-              &ml NAV LGUI  &ml NUMB LSFT         &mo SYMB  &kp SPC
+              &td_mt NAV LGUI LGUI  &ml NUMB LSFT         &mo SYMB  &kp SPC
       >;
     };
 
