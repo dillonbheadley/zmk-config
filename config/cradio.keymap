@@ -26,13 +26,14 @@
   flavor = "hold-preferred";
 };
 
-// &mmv {
-//     time-to-max-speed-ms = <500>;
-// };
+&mmv {
+    time-to-max-speed-ms = <500>;
+    acceleration-exponent=<1>;
+};
 
-// &mwh {
-//     acceleration-exponent=<1>;
-// };
+&mwh {
+    acceleration-exponent=<2>;
+};
 
 / { 
 
@@ -163,8 +164,8 @@
     mouse_layer {
       bindings = <
         &trans  &kp RALT  &mkp MB5  &mkp MB4  &trans            &kp PG_UP  &mwh SCROLL_UP  &mmv MOVE_UP  &mkp MCLK  &trans 
-        &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT  &trans          &kp PG_DN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-        &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP          &trans  &mwh SCROLL_LEFT  &mwh SCROLL_DOWN  &mwh SCROLL_RIGHT  &trans 
+        &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT  &trans          &kp PG_DN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &tog MOUSE
+        &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP          &trans  &mwh SCROLL_DOWN  &mwh SCROLL_RIGHT  &mwh SCROLL_LEFT  &trans 
                                 &tog MOUSE  &tog MOUSE          &mkp RCLK  &mkp LCLK
       >;
     };
