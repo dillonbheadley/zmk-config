@@ -27,13 +27,13 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <1000>;
-    acceleration-exponent=<2>;
+    time-to-max-speed-ms = <50>;
+    acceleration-exponent=<0>;
 };
 
 &mwh {
-    time-to-max-speed-ms = <1000>;
-    acceleration-exponent=<2>;
+    time-to-max-speed-ms = <500>;
+    acceleration-exponent=<0>;
 };
 
 / { 
