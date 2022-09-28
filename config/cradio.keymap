@@ -13,7 +13,8 @@
 #define NAV 2
 #define SYMB 3
 #define NUMB 4
-#define MEDIA 5
+#define MOUSE 5
+#define MEDIA 6
 
 &sk {
   release-after-ms = <500>;
@@ -84,6 +85,14 @@
       tapping-term-ms = <150>;
       bindings = <&ml NAV LGUI>, <&kp LGUI>;
     };
+    mo_tog: behavior_mo_tog {
+      compatible = "zmk,behavior-hold-tap";
+      label = "mo_tog";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <200>;
+      bindings = <&mo>, <&tog>;
+    };
   //   ZMK_MACRO(mac_slashes,
   //     wait-ms = <0>;
   //     tap-ms = <0>;
@@ -102,7 +111,7 @@
         &kp Q  &kp W  &kp E  &kp R  &kp T         &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
         &kp A  &kp S  &kp D  &kp F  &kp G         &kp H  &kp J  &kp K  &kp L  &kp P
         &kp Z  &kp X  &kp C  &kp V  &kp B         &kp N  &kp M  &kp CMMA  &kp DOT  &kp FSLH
-              &ml NAV LGUI  &ml NUMB LSFT         &mo SYMB  &kp SPC
+              &ml NAV LGUI  &ml NUMB LSFT         &mo_tog SYMB  &kp SPC
       >;
     };
 
@@ -132,7 +141,7 @@
                                     &kp LGUI  &kp LSFT          &trans  &kp ENTER 
       >;
     };	
-      
+
     number_layer {
       bindings = <
         &kp CAPS  &kp RALT  &key_repeat  &caps_word  &kp STAR       &kp MINUS  &kp N1  &kp N2  &kp N3  &kp CMMA
@@ -140,7 +149,16 @@
         &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP              &kp EQUAL  &kp N7  &kp N8  &kp N9  &kp DOT   
                                         &trans  &trans              &kp N0 &kp BKSP
       >;
-    };	
+    };
+
+    mouse_layer {
+      bindings = <
+        &trans  &kp RALT  &kp MB5  &kp MB4  &trans                &kp PG_UP  &kp SCROLL_UP  &kp MOVE_UP  &kp MCLK  &trans 
+        &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT  &trans          &kp PG_DN  &kp MOVE_LEFT  &kp MOVE_DOWN  &kp MOVE_RIGHT  &trans
+        &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP          &trans  &kp SCROLL_LEFT  &kp SCROLL_DOWN  &kp SCROLL_RIGHT  &trans 
+                                &tog MOUSE  &tog MOUSE          &kp RCLK  &kp LCLK
+      >;
+    };
 
     media_layer {
       bindings = <
