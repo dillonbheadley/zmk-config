@@ -85,7 +85,7 @@
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings
-        = <&macro_tap &tog MOUSE>
+        = <&macro_tap &to DEFAULT>
         , <&macro_press &trans>
         , <&macro_pause_for_release>
         , <&macro_release &trans>
@@ -142,7 +142,7 @@
         &kp TAB  &kp A  &kp S  &kp D  &kp F             &kp G  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
         &kp LSFT  &kp Z  &kp X  &kp C  &kp V            &kp B  &kp N3  &kp N4  &kp N5  &kp N6
                         &kp SPC  &kp LCTL                  &to DEFAULT  &kp SPC
-      >;
+        >;
     };
 
     nav_layer {
