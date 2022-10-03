@@ -79,20 +79,6 @@
       //     bindings = <&kp ENTER>;
       // };
   };
-  macros {
-    un_l: unlayer {
-      label = "macro_unlayer";
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <1>; 
-      bindings
-        = <&macro_tap_time 40>
-        , <&macro_tap &to DEFAULT>
-        , <&macro_press &ml>
-        , <&macro_pause_for_release>
-        , <&macro_release &ml>
-      ;
-    };
-  };
   behaviors {
     ml: mod_layer {
       compatible = "zmk,behavior-hold-tap";
