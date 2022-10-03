@@ -133,7 +133,7 @@
         &kp Q  &kp W  &kp E  &kp R  &kp T         &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
         &kp A  &kp S  &kp D  &kp F  &kp G         &kp H  &kp J  &kp K  &kp L  &kp P
         &kp Z  &kp X  &kp C  &kp V  &kp B         &kp N  &kp M  &kp CMMA  &kp DOT  &kp FSLH
-              &un_l NAV LGUI  &un_l NUMB LSFT         &mo_tog SYMB MOUSE  &kp SPC
+              &ml NAV LGUI  &ml NUMB LSFT         &mo_tog SYMB MOUSE  &kp SPC
       >;
     };
 
@@ -178,7 +178,7 @@
         &trans  &kp RALT  &kp LG(C)  &kp LC(UP)  &kp LG(V)                    &kp PG_UP  &mwh SCROLL_DOWN  &mmv MOVE_UP  &mkp MCLK  &mkp MB5 
         &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT  &kp SPC                       &kp PG_DN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &tog MOUSE
         &kp ESC  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(DOWN)  &kp BKSP          &kp LC(UP)  &mwh SCROLL_UP  &mwh SCROLL_RIGHT  &mwh SCROLL_LEFT  &mkp MB4 
-                                        &trans  &trans                        &mkp RCLK  &mkp LCLK
+                                    &tog MOUSE  &tog MOUSE                        &mkp RCLK  &mkp LCLK
       >;
     };
 
