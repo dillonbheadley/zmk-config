@@ -88,13 +88,6 @@
       tapping-term-ms = <150>;
       bindings = <&mo>, <&sk>;
     };
-    td_nav: tap_dance_nav {
-      compatible = "zmk,behavior-tap-dance";
-      label = "TAP_DANCE_MOD_LAYER";
-      #binding-cells = <0>;
-      tapping-term-ms = <150>;
-      bindings = <&ml NAV LGUI>, <&kp LGUI>;
-    };
     mo_tog: behavior_mo_tog {
       compatible = "zmk,behavior-hold-tap";
       label = "mo_tog";
@@ -103,13 +96,13 @@
       tapping-term-ms = <200>;
       bindings = <&mo>, <&tog>;
     };
-  //   ZMK_MACRO(mac_slashes,
-  //     wait-ms = <0>;
-  //     tap-ms = <0>;
-  //     bindings
-  //     = <&macro_release &kp LSHFT>
-  //     , <&macro_tap &kp BSLH>;
-  //   )
+    mouse_l: mouse_left {
+      compatible = "zmk,behavior-mod-morph";
+      label = "MOUSE_LEFT";
+      #binding-cells = <0>;
+      bindings = <&mmv MOVE_HOR(-600)>, <&mmv MOVE_HOR(-1200)>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
   };
 
   keymap {
@@ -162,7 +155,7 @@
     mouse_layer {
       bindings = <
         &trans  &kp RALT  &kp LG(C)  &kp LC(UP)  &kp LG(V)                    &kp PG_UP  &mwh SCROLL_DOWN  &mmv MOVE_UP  &mkp MCLK  &mkp MB5 
-        &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT  &kp SPC                       &kp PG_DN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &tog MOUSE
+        &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT  &kp SPC                       &kp PG_DN  &mouse_l  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &tog MOUSE
         &kp ESC  &kp LC(LEFT)  &kp LC(RIGHT)  &kp LC(DOWN)  &kp BKSP          &kp LC(UP)  &mwh SCROLL_UP  &mwh SCROLL_RIGHT  &mwh SCROLL_LEFT  &mkp MB4 
                                     &tog MOUSE  &tog MOUSE                        &mkp RCLK  &mkp LCLK
       >;
