@@ -96,6 +96,14 @@
       tapping-term-ms = <200>;
       bindings = <&mo>, <&tog>;
     };
+    tlt: tap_layer_tap {
+      compatible = "zmk,behavior-hold-tap";
+      label = "tap_lt";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <200>;
+      bindings = <&mo>, <&kp>;
+    };
     mouse_l: mouse_left {
       compatible = "zmk,behavior-mod-morph";
       label = "MOUSE_LEFT";
@@ -139,7 +147,7 @@
       bindings = <
         &kp Q  &kp W  &kp E  &kp R  &kp T         &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
         &kp A  &kp S  &kp D  &kp F  &kp G         &kp H  &kp J  &kp K  &kp L  &kp P
-        &kp Z  &kp X  &kp C  &kp V  &kp B         &kp N  &kp M  &kp CMMA  &kp DOT  &kp FSLH
+        &tlt MOUSE Z  &kp X  &kp C  &kp V  &kp B         &kp N  &kp M  &kp CMMA  &kp DOT  &kp FSLH
               &ml NAV LGUI  &ml NUMB LSFT         &mo SYMB  &kp SPC
       >;
     };
