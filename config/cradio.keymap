@@ -139,6 +139,13 @@
       bindings = <&mmv MOVE_VERT(600)>, <&mmv MOVE_VERT(1200)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+    mtap: mouse_tap {
+      compatible = "zmk,behavior-tap-dance";
+      label = "MOUSE_TAP";
+      #binding-cells = <1>;
+      tapping-term-ms = <200>;
+      bindings = <&kp>, <&to MOUSE>;
+    };
   };
 
   keymap {
@@ -147,7 +154,7 @@
       bindings = <
         &kp Q  &kp W  &kp E  &kp R  &kp T         &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
         &kp A  &kp S  &kp D  &kp F  &kp G         &kp H  &kp J  &kp K  &kp L  &kp P
-        &tlt MOUSE Z  &kp X  &kp C  &kp V  &kp B         &kp N  &kp M  &kp CMMA  &kp DOT  &kp FSLH
+        &tlt MOUSE Z  &kp X  &kp C  &kp V  &kp B         &kp N  &kp M  &mtap CMMA  &kp DOT  &kp FSLH
               &ml NAV LGUI  &ml NUMB LSFT         &mo SYMB  &kp SPC
       >;
     };
