@@ -146,16 +146,23 @@
       tapping-term-ms = <200>;
       bindings = <&kp CMMA>, <&to MOUSE>;
     };
+    lit: left_inner_thumb {
+      compatible = "zmk,behavior-tap-dance";
+      label = "LEFT_INNER_THUMB";
+      #binding-cells = <0>;
+      tapping-term-ms = <150>;
+      bindings = <&ml NUMB LSFT>, <&mo MOUSE>;
+    };
   };
 
   keymap {
     compatible = "zmk,keymap";
     default_layer {
       bindings = <
-        &kp Q  &kp W  &kp E  &kp R  &kp T         &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
-        &kp A  &kp S  &kp D  &kp F  &kp G         &kp H  &kp J  &kp K  &kp L  &kp P
-        &tlt MOUSE Z  &kp X  &kp C  &kp V  &kp B         &kp N  &kp M  &dlt  &kp DOT  &kp FSLH
-              &ml NAV LGUI  &ml NUMB LSFT         &mo SYMB  &kp SPC
+        &kp Q  &kp W  &kp E  &kp R  &kp T           &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
+        &kp A  &kp S  &kp D  &kp F  &kp G           &kp H  &kp J  &kp K  &kp L  &kp P
+        &tlt MOUSE Z  &kp X  &kp C  &kp V  &kp B    &kp N  &kp M  &dlt  &kp DOT  &kp FSLH
+              &ml NAV LGUI  &lit                    &mo SYMB  &kp SPC
       >;
     };
 
