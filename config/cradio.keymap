@@ -54,7 +54,7 @@
       label = "MOD_LAYER";
       #binding-cells = <2>;
       flavor = "hold-preferred";
-      tapping-term-ms = <200>;
+      tapping-term-ms = <150>;
       bindings = <&mo>, <&sk>;
     };
     mo_tog: behavior_mo_tog {
@@ -84,7 +84,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "LEFT_INNER_THUMB";
       #binding-cells = <0>;
-      tapping-term-ms = <150>;
+      tapping-term-ms = <200>;
       bindings = <&ml NUMB LSFT>, <&mo MOUSE>;
     };
     mouse_l: mouse_left {
@@ -131,7 +131,7 @@
         &kp Q  &kp W  &kp E  &kp R  &kp T           &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
         &kp A  &kp S  &kp D  &kp F  &kp G           &kp H  &kp J  &kp K  &kp L  &kp P
         &tlt MOUSE Z  &kp X  &kp C  &kp V  &kp B    &kp N  &kp M  &dlt  &kp DOT  &kp FSLH
-              &ml NAV LGUI  &lit                    &mo SYMB  &kp SPC
+              &ml NAV LGUI  &ml NUMB LSFT           &mo SYMB  &kp SPC
       >;
     };
 
