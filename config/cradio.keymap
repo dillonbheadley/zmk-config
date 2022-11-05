@@ -27,13 +27,13 @@
 };
 
 &mmv {
-    time-to-max-speed-ms = <100>;
+    time-to-max-speed-ms = <1000>;
     acceleration-exponent=<1>;
 };
 
 &mwh {
     time-to-max-speed-ms = <100>;
-    acceleration-exponent=<0>;
+    acceleration-exponent=<1>;
 };
 
 / { 
@@ -91,28 +91,28 @@
       compatible = "zmk,behavior-mod-morph";
       label = "MOUSE_LEFT";
       #binding-cells = <0>;
-      bindings = <&mmv MOVE_HOR(-600)>, <&mmv MOVE_HOR(-1200)>;
+      bindings = <&mmv MOVE_HOR(-1500)>, <&mmv MOVE_HOR(-2000)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     mouse_l: mouse_left {
       compatible = "zmk,behavior-mod-morph";
       label = "MOUSE_LEFT";
       #binding-cells = <0>;
-      bindings = <&mmv MOVE_HOR(-600)>, <&mmv MOVE_HOR(-1200)>;
+      bindings = <&mmv MOVE_HOR(-1500)>, <&mmv MOVE_HOR(-2000)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     mouse_r: mouse_right {
       compatible = "zmk,behavior-mod-morph";
       label = "MOUSE_RIGHT";
       #binding-cells = <0>;
-      bindings = <&mmv MOVE_HOR(600)>, <&mmv MOVE_HOR(1200)>;
+      bindings = <&mmv MOVE_HOR(1500)>, <&mmv MOVE_HOR(2000)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     mouse_u: mouse_up {
       compatible = "zmk,behavior-mod-morph";
       label = "MOUSE_UP";
       #binding-cells = <0>;
-      bindings = <&mmv MOVE_VERT(-600)>, <&mmv MOVE_VERT(-1200)>;
+      bindings = <&mmv MOVE_VERT(-1500)>, <&mmv MOVE_VERT(-2000)>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
     };
     mouse_d: mouse_down {
