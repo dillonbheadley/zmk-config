@@ -52,7 +52,7 @@
       compatible = "zmk,combos";
       combo_cmd {
           timeout-ms = <50>;
-          key-positions = <10 19>;
+          key-positions = <5 22>;
           bindings = <&tog EITGHTEEN_DEFAULT>;
           layers = <DEFAULT EITGHTEEN_DEFAULT>;
       };
