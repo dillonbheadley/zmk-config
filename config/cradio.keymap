@@ -17,19 +17,23 @@
 #define NUMB 5
 #define MEDIA 6
 
-#define EITGHTEEN_DEFAULT 7
-#define EITGHTEEN_ALPHA 8
-#define EITGHTEEN_NAV 10
-#define EITGHTEEN_NUMB 11
-#define EITGHTEEN_PUNCT 12
-#define EITGHTEEN_SYMB 13
-#define EITGHTEEN_MEDIA 14
-#define EITGHTEEN_FUNC 15
-#define EITGHTEEN_SYS 16
+#define EIGHTEEN_DEFAULT 7
+#define EIGHTEEN_ALPHA 8
+#define EIGHTEEN_NAV 10
+#define EIGHTEEN_NUMB 11
+#define EIGHTEEN_PUNCT 12
+#define EIGHTEEN_SYMB 13
+#define EIGHTEEN_MEDIA 14
+#define EIGHTEEN_FUNC 15
+#define EIGHTEEN_SYS 16
 
 &sk {
   release-after-ms = <500>;
   quick-release;
+};
+
+&sl {
+  release-after-ms = <500>;
 };
 
 &lt {
@@ -52,9 +56,9 @@
       compatible = "zmk,combos";
       combo_cmd {
           timeout-ms = <50>;
-          key-positions = <5 22>;
-          bindings = <&tog EITGHTEEN_DEFAULT>;
-          layers = <DEFAULT EITGHTEEN_DEFAULT>;
+          key-positions = <10 19>;
+          bindings = <&tog EIGHTEEN_DEFAULT>;
+          layers = <DEFAULT EIGHTEEN_DEFAULT>;
       };
   };
 
@@ -191,14 +195,13 @@
                                 &bt BT_SEL 0 &bt BT_NXT       &trans &kp BKSP
       >;
     };
-    // a. b c. d. e. f g. h. i. j k l. m n. o. p q r. s. t. u. v w x y z
-    // arst neio dh mlgp
+
     eighteen_default {
       bindings = <
         &trans  &kp D  &kp H &kp N  &trans                           &trans  &kp U  &kp O  &kp Y  &trans 
-        &sl EITGHTEEN_ALPHA  &kp S  &kp R  &kp T  &trans              &trans  &kp A  &kp E  &kp I  &sl EITGHTEEN_ALPHA
+        &sl EIGHTEEN_ALPHA  &kp S  &kp R  &kp T  &trans              &trans  &kp A  &kp E  &kp I  &sl EIGHTEEN_ALPHA
         &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans
-              &ml NAV LGUI  &ml NUMB LSFT                             &mo SYMB  &kp SPC
+        &ml EIGHTEEN_NAV LGUI  &ml EIGHTEEN_NUMB LSFT                             &mo EIGHTEEN_SYMB  &kp SPC
       >;
     };
     eighteen_alpha {
@@ -211,34 +214,34 @@
     };
     eighteen_nav {
       bindings = <
-        &kp Q  &kp W  &kp E  &kp R  &kp T           &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
-        &kp A  &kp S  &kp D  &kp F  &kp G           &kp H  &kp J  &kp K  &kp L  &kp P
-        &tlt MOUSE Z  &kp X  &kp C  &kp V  &kp B    &kp N  &kp M  &dlt  &kp DOT  &kp FSLH
-              &ml NAV LGUI  &ml NUMB LSFT           &mo SYMB  &kp SPC
+        &trans  &kp RALT  &key_repeat  &caps_word  &trans     &trans  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &trans 
+        &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT  &trans        &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
+        &kp ESC  &kp TAB  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans 
+                                        &trans  &trans        &mo EIGHTEEN_MEDIA  &kp BKSP
       >;
     };
     eighteen_numbers {
       bindings = <
-        &kp Q  &kp W  &kp E  &kp R  &kp T           &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
-        &kp A  &kp S  &kp D  &kp F  &kp G           &kp H  &kp J  &kp K  &kp L  &kp P
-        &tlt MOUSE Z  &kp X  &kp C  &kp V  &kp B    &kp N  &kp M  &dlt  &kp DOT  &kp FSLH
-              &ml NAV LGUI  &ml NUMB LSFT           &mo SYMB  &kp SPC
+        &trans  &kp N7  &kp N8  &kp N9  &trans              &trans  &kp N1  &kp N2  &kp N3  &trans
+        &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT  &trans      &trans  &kp N4  &kp N5  &kp N6  &kp ENTER 
+        &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans   
+                                &trans  &trans              &kp N0 &kp BKSP
       >;
     };
     eighteen_punct {
       bindings = <
-        &kp Q  &kp W  &kp E  &kp R  &kp T           &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
-        &kp A  &kp S  &kp D  &kp F  &kp G           &kp H  &kp J  &kp K  &kp L  &kp P
-        &tlt MOUSE Z  &kp X  &kp C  &kp V  &kp B    &kp N  &kp M  &dlt  &kp DOT  &kp FSLH
-              &ml NAV LGUI  &ml NUMB LSFT           &mo SYMB  &kp SPC
+        &trans  &kp DLLR  &kp HASH  &kp ATSN  &trans          &trans  &kp SEMI &kp COLON &kp TILDE &trans
+        &kp PIPE  &kp AMPS  &kp QMARK  &kp BANG  &trans       &trans  &kp CMMA  &kp DOT  &kp EQUAL  &kp SEMI
+        &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+                                    &kp LGUI  &kp LSFT          &trans  &kp ENTER
       >;
     };
     eighteen_symbols {
       bindings = <
-        &kp Q  &kp W  &kp E  &kp R  &kp T           &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
-        &kp A  &kp S  &kp D  &kp F  &kp G           &kp H  &kp J  &kp K  &kp L  &kp P
-        &tlt MOUSE Z  &kp X  &kp C  &kp V  &kp B    &kp N  &kp M  &dlt  &kp DOT  &kp FSLH
-              &ml NAV LGUI  &ml NUMB LSFT           &mo SYMB  &kp SPC
+        &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp STAR        &kp BSLH  &kp DQT &kp GRAV &kp TILDE &trans
+        &kp PIPE  &kp AMPS  &kp QMARK  &kp BANG  &kp PLUS       &kp COLON  &kp MINUS  &kp UNDER  &kp EQUAL  &kp SEMI
+        &kp LT  &kp LBKT  &kp LPAR  &kp LBRC  &kp CRRT          &kp FSLH  &kp RBRC  &kp RPAR  &kp RBKT  &kp GT
+                                    &kp LGUI  &kp LSFT          &trans  &kp ENTER 
       >;
     };
     eighteen_func {
