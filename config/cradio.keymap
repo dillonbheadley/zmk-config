@@ -241,7 +241,7 @@
         &trans  &kp STAR  &kp PIPE  &kp GRAV  &trans          &trans  &kp RBKT  &kp RPAR  &kp RBRC &trans
         &kp PRCT  &kp PLUS  &kp AMPS  &kp EQUAL  &trans       &trans  &kp LBKT  &kp LPAR  &kp LBRC  &kp BSLH
         &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-                    &mt LGUI TILDE  &mt LSFT CRRT              &kp LT  &kp GT 
+                    &mt LGUI TILDE  &mt LSFT CRRT              &mt LCTL LT  &mt LALT GT 
                                     
                                     
         // &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp STAR        &kp BSLH  &kp DQT &kp GRAV &kp TILDE &trans
