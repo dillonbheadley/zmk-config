@@ -19,13 +19,13 @@
 
 #define EIGHTEEN_DEFAULT 7
 #define EIGHTEEN_ALPHA 8
-#define EIGHTEEN_NAV 10
-#define EIGHTEEN_NUMB 11
-#define EIGHTEEN_PUNCT 12
-#define EIGHTEEN_SYMB 13
-#define EIGHTEEN_MEDIA 14
-#define EIGHTEEN_FUNC 15
-#define EIGHTEEN_SYS 16
+#define EIGHTEEN_NAV 9
+#define EIGHTEEN_NUMB 10
+#define EIGHTEEN_PUNCT 11
+#define EIGHTEEN_SYMB 12
+#define EIGHTEEN_MEDIA 13
+#define EIGHTEEN_FUNC 14
+#define EIGHTEEN_SYS 15
 
 &sk {
   release-after-ms = <500>;
@@ -198,7 +198,7 @@
 
     eighteen_default {
       bindings = <
-        &trans  &kp D  &kp H &kp N  &trans                           &trans  &kp U  &kp O  &kp Y  &trans 
+        &trans  &kp D  &kp H &kp N  &trans                           &trans  &kp U  &kp O  &kp L  &trans 
         &sl EIGHTEEN_ALPHA  &kp S  &kp R  &kp T  &trans              &trans  &kp A  &kp E  &kp I  &sl EIGHTEEN_ALPHA
         &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans
         &ml EIGHTEEN_NAV LGUI  &ml EIGHTEEN_NUMB LSFT                             &mo EIGHTEEN_SYMB  &kp SPC
@@ -206,8 +206,8 @@
     };
     eighteen_alpha {
       bindings = <
-        &trans  &kp Q  &kp W  &kp M  &trans           &trans  &kp G  &kp P  &kp B  &trans 
-        &kp Z  &kp X  &kp C  &kp V  &trans           &trans  &kp F  &kp K  &kp L  &kp J
+        &trans  &kp Q  &kp W  &kp M  &trans           &trans  &kp F  &kp K  &kp J  &trans
+        &kp Z  &kp X  &kp C  &kp V  &trans           &trans  &kp G  &kp P  &kp B  &kp Y
         &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
                         &kp LGUI  &kp LSFT          &kp LSFT  &kp LGUI
       >;
@@ -230,18 +230,24 @@
     };
     eighteen_punct {
       bindings = <
-        &trans  &kp DLLR  &kp HASH  &kp ATSN  &trans          &trans  &kp SEMI &kp COLON &kp TILDE &trans
-        &kp PIPE  &kp AMPS  &kp QMARK  &kp BANG  &trans       &trans  &kp CMMA  &kp DOT  &kp EQUAL  &kp SEMI
-        &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-                                    &kp LGUI  &kp LSFT          &trans  &kp ENTER
+        &trans  &kp DLLR  &kp HASH  &kp ATSN  &trans                          &trans  &kp DQT &kp SEMI &kp COLON &trans
+        &tlt EIGHTEEN_SYMB UNDER  &kp MINUS  &kp QMARK  &kp BANG  &trans      &trans  &kp QUOT  &kp CMMA  &kp DOT  &tlt EIGHTEEN_SYMB FSLH
+        &trans  &trans  &trans  &trans  &trans                                &trans  &trans  &trans  &trans  &trans
+                                    &kp LGUI  &kp LSFT                        &trans  &kp ENTER
       >;
     };
     eighteen_symbols {
       bindings = <
-        &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp STAR        &kp BSLH  &kp DQT &kp GRAV &kp TILDE &trans
-        &kp PIPE  &kp AMPS  &kp QMARK  &kp BANG  &kp PLUS       &kp COLON  &kp MINUS  &kp UNDER  &kp EQUAL  &kp SEMI
-        &kp LT  &kp LBKT  &kp LPAR  &kp LBRC  &kp CRRT          &kp FSLH  &kp RBRC  &kp RPAR  &kp RBKT  &kp GT
-                                    &kp LGUI  &kp LSFT          &trans  &kp ENTER 
+        &trans  &kp STAR  &kp PIPE  &kp GRAV  &trans          &trans  &kp RBKT  &kp RPAR  &kp RBRC &trans
+        &kp PRCT  &kp PLUS  &kp AMPS  &kp EQUAL  &trans       &trans  &kp LBKT  &kp LPAR  &kp LBRC  &kp BSLH
+        &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+                    &mt LGUI TILDE  &mt LSFT CRRT              &kp LT  &kp GT 
+                                    
+                                    
+        // &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp STAR        &kp BSLH  &kp DQT &kp GRAV &kp TILDE &trans
+        // &kp PIPE  &kp AMPS  &kp QMARK  &kp BANG  &kp PLUS       &kp COLON  &kp MINUS  &kp UNDER  &kp EQUAL  &kp SEMI
+        // &kp LT  &kp LBKT  &kp LPAR  &kp LBRC  &kp CRRT          &kp FSLH  &kp RBRC  &kp RPAR  &kp RBKT  &kp GT
+        //                             &kp LGUI  &kp LSFT          &trans  &kp ENTER                                     
       >;
     };
     eighteen_func {
