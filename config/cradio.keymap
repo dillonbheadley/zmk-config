@@ -207,7 +207,7 @@
     eighteen_alpha {
       bindings = <
         &trans  &kp Q  &kp W  &kp M  &trans           &trans  &kp F  &kp K  &kp J  &trans
-        &kp Z  &kp X  &kp C  &kp V  &trans           &trans  &kp G  &kp P  &kp B  &kp Y
+        &kp Z  &kp X  &kp C  &kp V  &trans           &trans  &kp G  &kp B  &kp P  &kp Y
         &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans
                         &kp LGUI  &kp LSFT          &kp LSFT  &kp LGUI
       >;
