@@ -243,7 +243,7 @@
         &trans  &kp DLLR  &kp HASH  &kp ATSN  &trans                          &trans  &kp DQT &kp SEMI &kp COLON &trans
         &tlt EIGHTEEN_SYMB UNDER  &kp MINUS  &kp QMARK  &kp BANG  &trans      &trans  &kp QUOT  &kp CMMA  &kp DOT  &tlt EIGHTEEN_SYMB FSLH
         &trans  &trans  &trans  &trans  &trans                                &trans  &trans  &trans  &trans  &trans
-                                    &kp LGUI  &kp LSFT                        &trans  &kp ENTER
+                                    &kp LGUI  &kp LSFT                        &trans  &kp BKSP
       >;
     };
     eighteen_symbols {
