@@ -211,7 +211,7 @@
         &trans  &kp D  &kp H &kp N  &trans                           &trans  &kp U  &kp O  &kp L  &trans 
         &sl EIGHTEEN_ALPHA  &kp S  &kp R  &kp T  &trans              &trans  &kp A  &kp E  &kp I  &sl EIGHTEEN_ALPHA
         &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans
-        &ml EIGHTEEN_NAV LGUI  &ml EIGHTEEN_NUMB LSFT                             &mo EIGHTEEN_SYMB  &kp SPC
+        &ml EIGHTEEN_NAV LGUI  &ml EIGHTEEN_NUMB LSFT                             &mo EIGHTEEN_PUNCT  &kp SPC
       >;
     };
     eighteen_alpha {
