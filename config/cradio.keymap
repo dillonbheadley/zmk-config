@@ -140,8 +140,8 @@
     alt_layer {
       bindings = <
         &kp Q  &kp W  &kp F  &kp P  &kp B           &kp Z  &kp L  &kp U  &kp O  &kp FSLH 
-        &kp C  &kp R  &kp S  &kp T  &kp G           &kp M  &kp H  &kp E  &kp A  &kp I
-  &tlt MOUSE V  &kp X  &kp Y  &kp D  &kp K          &kp J  &kp N  &kp QUOT  &kp CMMA  &kp DOT
+        &kp C  &kp R  &kp S  &kp T  &kp G           &kp M  &kp N  &kp E  &kp A  &kp I
+  &tlt MOUSE V  &kp X  &kp Y  &kp D  &kp K          &kp J  &kp H  &kp QUOT  &kp CMMA  &kp DOT
               &ml NAV LGUI  &ml NUMB LSFT           &mo SYMB  &kp SPC
       >;
     };
