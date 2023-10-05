@@ -139,12 +139,21 @@
 
     alt_layer {
       bindings = <
-        &kp J  &kp G  &kp M  &kp P  &kp V           &kp Z  &kp DOT  &kp QUOT  &kp Q  &kp FSLH 
-        &kp R  &kp S  &kp N  &kp D  &kp B           &kp CMMA  &kp A  &kp E  &kp I  &kp H
-  &tlt MOUSE X  &kp F  &kp L  &kp C  &kp W          &sk LGUI  &kp U  &kp O  &kp Y  &kp K
-              &lt NAV T  &ml NUMB LSFT              &mo SYMB  &kp SPC
+        &kp B  &kp C  &kp Y  &kp F  &sk LGUI        &kp QUOT  &kp M  &kp Z  &kp X  &kp Q 
+        &kp R  &kp S  &kp T  &kp H  &kp K           &kp V  &kp N  &kp I  &kp A  &kp O
+  &tlt MOUSE W  &kp G  &kp P  &kp D  &kp FSLH       &kp J  &kp L  &kp U  &kp CMMA  &kp DOT
+                      &lt NAV E  &ml NUMB LSFT      &mo SYMB  &kp SPC
       >;
     };
+
+//    alt_layer {
+//      bindings = <
+//        &kp J  &kp G  &kp M  &kp P  &kp V           &kp Z  &kp DOT  &kp QUOT  &kp Q  &kp FSLH 
+//        &kp R  &kp S  &kp N  &kp D  &kp B           &kp CMMA  &kp A  &kp E  &kp I  &kp H
+//  &tlt MOUSE X  &kp F  &kp L  &kp C  &kp W          &sk LGUI  &kp U  &kp O  &kp Y  &kp K
+//              &lt NAV T  &ml NUMB LSFT              &mo SYMB  &kp SPC
+//      >;
+//    };
 
 
     game_layer {
