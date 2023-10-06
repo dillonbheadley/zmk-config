@@ -27,9 +27,9 @@
   release-after-ms = <500>;
 };
 
-// &lt {
-//  flavor = "hold-preferred";
-// };
+&lt {
+ flavor = "hold-preferred";
+};
 
 &mmv {
     time-to-max-speed-ms = <1000>;
