@@ -130,22 +130,12 @@
     compatible = "zmk,keymap";
     default_layer {
       bindings = <
-        &kp Q  &kp W  &kp E  &kp R  &kp F           &kp K  &kp U  &kp I  &kp O  &kp FSLH 
-        &kp A  &kp S  &kp D  &kp T  &kp G           &kp H  &kp N  &kp Y  &kp L  &kp P
-  &tlt MOUSE Z  &kp X  &kp C  &kp V  &kp B          &kp J  &kp M  &kp CMMA  &kp DOT  &kp QUOT
-              &ml NAV LGUI  &ml NUMB LSFT           &mo SYMB  &kp SPC
-      >;
-    };
-
-    alt_layer {
-      bindings = <
-        &kp Q  &kp W  &kp E  &kp R  &kp T           &kp Y  &kp U  &kp I  &kp O  &kp P 
-        &kp A  &kp S  &kp D  &kp F  &kp G           &kp H  &kp J  &kp K  &kp L  &kp QUOT
+        &kp Q  &kp W  &kp E  &kp R  &kp T           &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
+        &kp A  &kp S  &kp D  &kp F  &kp G           &kp H  &kp J  &kp K  &kp L  &kp P
   &tlt MOUSE Z  &kp X  &kp C  &kp V  &kp B          &kp N  &kp M  &kp CMMA  &kp DOT  &kp FSLH
               &ml NAV LGUI  &ml NUMB LSFT           &mo SYMB  &kp SPC
       >;
     };
-
 
 // dsthk v2
 // alt_layer {
@@ -166,6 +156,16 @@
 //              &lt NAV T  &ml NUMB LSFT              &mo SYMB  &kp SPC
 //      >;
 //    };
+
+// engram
+    alt_layer {
+      bindings = <
+        &kp B  &kp Y  &kp O  &kp U  &kp Z              &kp QUOT  &kp L  &kp D  &kp W  &kp V 
+        &kp C  &kp I  &kp E  &kp A  &kp CMMA           &kp DOT  &kp H  &kp T  &kp S  &kp N
+  &tlt MOUSE G  &kp X  &kp J  &kp K  &kp FSLH          &kp Q  &kp R  &kp M  &kp F  &kp P
+             &ml NAV LGUI  &ml NUMB LSFT               &mo SYMB  &kp SPC
+      >;
+    };
 
 
     game_layer {
