@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #define DEFAULT 0
-#define ALT 1
+#define ALTLAYOUT 1
 #define GAME 2
 #define MOUSE 3
 #define NAV 4
@@ -188,7 +188,7 @@
 
     nav_layer {
       bindings = <
-        &kp CAPS  &kp RALT  &key_repeat  &caps_word  &reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &to ALT 
+        &kp CAPS  &kp RALT  &key_repeat  &caps_word  &reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &to ALTLAYOUT 
         &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT  &to GAME         &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
         &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP          &to DEFAULT  &kp LG(LEFT)  &kp LC(MINUS)  &kp LG(RIGHT)  &kp DEL 
                                         &trans  &trans          &mo MEDIA  &kp BKSP
