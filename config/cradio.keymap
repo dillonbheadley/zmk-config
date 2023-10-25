@@ -114,6 +114,16 @@
   };
 
   macros {
+      meh: meh {
+          label = "meh";
+          compatible = "zmk,behavior-macro-one-param";
+          #binding-cells = <1>;
+          wait-ms = <2>;
+          tap-ms = <2>;
+          bindings
+              = <&macro_tap &kp LS(LG(LA(MACRO_PLACEHOLDER))) >
+              ;
+      };
       the: the {
           label = "mac_the";
           compatible = "zmk,behavior-macro";
@@ -179,10 +189,10 @@
 
     macros_layer {
       bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &the  &trans      &trans  &kp LS(LG(LA(J)))  &trans  &trans  &trans
-        &trans  &trans  &afn  &trans  &trans      &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans    &trans  &trans
+        &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &the  &trans         &trans  &meh J  &meh K  &meh L  &meh P
+        &kp GLOBE  &trans  &afn  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans       &trans  &trans
       >;
     };
 
