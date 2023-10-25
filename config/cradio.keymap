@@ -206,7 +206,7 @@
 
     nav_layer {
       bindings = <
-        &kp CAPS  &kp RALT  &key_repeat  &caps_word  &reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &to ALTLAYOUT 
+        &kp CAPS  &kp RALT  &key_repeat  &caps_word  &sys_reset     &kp PG_UP  &kp LG(LBKT)  &kp UP  &kp LG(RBKT)  &to ALTLAYOUT 
         &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT  &to GAME         &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
         &kp ESC  &kp TAB  &kp ENTER  &kp SPC  &kp BKSP          &to DEFAULT  &kp LG(LEFT)  &kp LC(MINUS)  &kp LG(RIGHT)  &kp DEL 
                                         &trans  &trans          &mo MEDIA  &kp BKSP
@@ -215,7 +215,7 @@
       
     symbols_layer {
       bindings = <
-        &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp STAR        &kp BSLH  &kp DQT &kp GRAV &kp TILDE &reset
+        &kp PRCT  &kp DLLR  &kp HASH  &kp ATSN  &kp STAR        &kp BSLH  &kp DQT &kp GRAV &kp TILDE &sys_reset
         &kp PIPE  &kp AMPS  &kp QMARK  &kp BANG  &kp PLUS       &kp COLON  &kp MINUS  &kp UNDER  &kp EQUAL  &kp SEMI
         &kp LT  &kp LBKT  &kp LPAR  &kp LBRC  &kp CRRT          &kp FSLH  &kp RBRC  &kp RPAR  &kp RBKT  &kp GT
                                     &kp LGUI  &kp LSFT          &trans  &kp ENTER 
