@@ -121,7 +121,7 @@
           wait-ms = <2>;
           tap-ms = <2>;
           bindings
-              = <&macro_tap &kp LS(LG(LA(MACRO_PLACEHOLDER)))>
+              = <&macro_param_1to1>, <&kp LS(LG(LA(MACRO_PLACEHOLDER)))>
               ;
       };
       the: the {
@@ -141,7 +141,7 @@
           wait-ms = <2>;
           tap-ms = <2>;
           bindings
-              = <&macro_tap &kp LPAR &kp RPAR &kp SPC &kp EQUAL &kp GT>
+              = <&macro_tap &kp LPAR &kp RPAR &kp SPC &kp EQUAL &kp GT &kp SPC &kp LBRC>
               ;
       };
   };
