@@ -121,7 +121,7 @@
           wait-ms = <2>;
           tap-ms = <2>;
           bindings
-              = <&macro_tap &kp LS(LG(LA(MACRO_PLACEHOLDER))) >
+              = <&macro_tap &kp LS(LG(LA(MACRO_PLACEHOLDER)))>
               ;
       };
       the: the {
