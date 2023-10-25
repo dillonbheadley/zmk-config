@@ -123,7 +123,7 @@
           bindings
               = <&macro_press &kp LSHFT &kp LGUI &kp LALT>,
                 <&macro_param_1to1>,
-                <&macro_tap &kp MACRO_PLACEHOLDER>,
+                <&macro_tap &kp 0>,
                 <&macro_release &kp LSHFT &kp LGUI &kp LALT>
               ;
       };
