@@ -28,15 +28,15 @@
   release-after-ms = <500>;
 };
 
-&mmv {
-    time-to-max-speed-ms = <1000>;
-    acceleration-exponent=<1>;
-};
+// &mmv {
+//     time-to-max-speed-ms = <1000>;
+//     acceleration-exponent=<1>;
+// };
 
-&mwh {
-    time-to-max-speed-ms = <1000>;
-    acceleration-exponent=<1>;
-};
+// &mwh {
+//     time-to-max-speed-ms = <1000>;
+//     acceleration-exponent=<1>;
+// };
 
 / { 
 
