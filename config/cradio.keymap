@@ -118,6 +118,8 @@
           label = "mac_the";
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
+          wait-ms = <2>
+          tap-ms = <2>
           bindings
               = <&macro_tap &kp T &kp H &kp E>
               ;
@@ -126,8 +128,10 @@
           label = "mac_arrow_function";
           compatible = "zmk,behavior-macro";
           #binding-cells = <0>;
+          wait-ms = <2>
+          tap-ms = <2>
           bindings
-              = <&macro_tap &kp LPAR &kp RPAR &kp SPC &kp EQUAL>
+              = <&macro_tap &kp LPAR &kp RPAR &kp SPC &kp EQUAL &kp GT>
               ;
       };
   };
