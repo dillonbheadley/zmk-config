@@ -11,12 +11,13 @@
 
 #define DEFAULT 0
 #define ALTLAYOUT 1
-#define GAME 2
-#define MOUSE 3
-#define NAV 4
-#define SYMB 5
-#define NUMB 6
-#define MEDIA 7
+#define MACRO 2
+#define GAME 3
+#define MOUSE 4
+#define NAV 5
+#define SYMB 6
+#define NUMB 7
+#define MEDIA 8
 
 &sk {
   release-after-ms = <500>;
@@ -82,20 +83,6 @@
       tapping-term-ms = <200>;
       bindings = <&mo>, <&kp>;
     };
-    dlt: double_layer_tap {
-      compatible = "zmk,behavior-tap-dance";
-      label = "DOUBLE_LAYER_TAP";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&kp CMMA>, <&to MOUSE>;
-    };
-    lit: left_inner_thumb {
-      compatible = "zmk,behavior-tap-dance";
-      label = "LEFT_INNER_THUMB";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&ml NUMB LSFT>, <&mo MOUSE>;
-    };
     mouse_l: mouse_left {
       compatible = "zmk,behavior-mod-morph";
       label = "MOUSE_LEFT";
@@ -126,14 +113,33 @@
     };
   };
 
+  macros {
+      the: the {
+          label = "mac_the";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp T &kp H &kp E>
+              ;
+      };
+      afn: afn {
+          label = "mac_arrow_function";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings
+              = <&macro_tap &kp LPAR &kp RPAR &kp SPC &kp EQUAL>
+              ;
+      };
+  };
+
   keymap {
     compatible = "zmk,keymap";
     default_layer {
       bindings = <
         &kp Q  &kp W  &kp E  &kp R  &kp T           &kp Y  &kp U  &kp I  &kp O  &kp QUOT 
         &kp A  &kp S  &kp D  &kp F  &kp G           &kp H  &kp J  &kp K  &kp L  &kp P
-  &tlt MOUSE Z  &kp X  &kp C  &kp V  &kp B          &kp N  &kp M  &kp CMMA  &kp DOT  &kp FSLH
-              &ml NAV LGUI  &ml NUMB LSFT           &mo SYMB  &kp SPC
+  &lt MOUSE Z  &kp X  &kp C  &kp V  &kp B          &kp N  &kp M  &kp CMMA  &kp DOT  &kp FSLH
+              &ml NAV LGUI  &ml NUMB LSFT           &mo SYMB  &lt MACRO SPC
       >;
     };
 
@@ -167,6 +173,14 @@
       >;
     };
 
+    macros_layer {
+      bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &the  &trans      &trans  &kp LS(LG(LA(J)))  &trans  &trans  &trans
+        &trans  &trans  &afn  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+                                &trans  &trans    &trans  &trans
+      >;
+    };
 
     game_layer {
       bindings = <
