@@ -79,34 +79,34 @@
       tapping-term-ms = <200>;
       bindings = <&mo>, <&kp>;
     };
-    mouse_l: mouse_left {
-      compatible = "zmk,behavior-mod-morph";
-      label = "MOUSE_LEFT";
-      #binding-cells = <0>;
-      bindings = <&mmv MOVE_HOR(-5000)>, <&mmv MOVE_HOR(-2000)>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    mouse_r: mouse_right {
-      compatible = "zmk,behavior-mod-morph";
-      label = "MOUSE_RIGHT";
-      #binding-cells = <0>;
-      bindings = <&mmv MOVE_HOR(5000)>, <&mmv MOVE_HOR(2000)>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    mouse_u: mouse_up {
-      compatible = "zmk,behavior-mod-morph";
-      label = "MOUSE_UP";
-      #binding-cells = <0>;
-      bindings = <&mmv MOVE_VERT(-5000)>, <&mmv MOVE_VERT(-2000)>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-    mouse_d: mouse_down {
-      compatible = "zmk,behavior-mod-morph";
-      label = "MOUSE_DOWN";
-      #binding-cells = <0>;
-      bindings = <&mmv MOVE_VERT(5000)>, <&mmv MOVE_VERT(2000)>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+    // mouse_l: mouse_left {
+    //   compatible = "zmk,behavior-mod-morph";
+    //   label = "MOUSE_LEFT";
+    //   #binding-cells = <0>;
+    //   bindings = <&mmv MOVE_HOR(-5000)>, <&mmv MOVE_HOR(-2000)>;
+    //   mods = <(MOD_LSFT|MOD_RSFT)>;
+    // };
+    // mouse_r: mouse_right {
+    //   compatible = "zmk,behavior-mod-morph";
+    //   label = "MOUSE_RIGHT";
+    //   #binding-cells = <0>;
+    //   bindings = <&mmv MOVE_HOR(5000)>, <&mmv MOVE_HOR(2000)>;
+    //   mods = <(MOD_LSFT|MOD_RSFT)>;
+    // };
+    // mouse_u: mouse_up {
+    //   compatible = "zmk,behavior-mod-morph";
+    //   label = "MOUSE_UP";
+    //   #binding-cells = <0>;
+    //   bindings = <&mmv MOVE_VERT(-5000)>, <&mmv MOVE_VERT(-2000)>;
+    //   mods = <(MOD_LSFT|MOD_RSFT)>;
+    // };
+    // mouse_d: mouse_down {
+    //   compatible = "zmk,behavior-mod-morph";
+    //   label = "MOUSE_DOWN";
+    //   #binding-cells = <0>;
+    //   bindings = <&mmv MOVE_VERT(5000)>, <&mmv MOVE_VERT(2000)>;
+    //   mods = <(MOD_LSFT|MOD_RSFT)>;
+    // };
   };
 
   macros {
