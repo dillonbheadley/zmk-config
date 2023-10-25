@@ -194,7 +194,7 @@
       bindings = <
         &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &the  &trans         &trans  &meh J  &meh K  &meh L  &meh P
-        &kp GLOBE  &trans  &afn  &trans  &trans      &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &afn  &trans  &trans      &trans  &trans  &trans  &trans  &trans
                                 &trans  &trans       &trans  &trans
       >;
     };
