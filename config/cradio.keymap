@@ -156,9 +156,9 @@
       >;
     };
       
-    symbols_layer {
+    symbols_layer { // doubles / ? < > ' " (semi/colon to default?)
       bindings = <
-        &kp PRCT  &kp DLLR  &kp HASH    &kp ATSN  &kp STAR        &kp CRRT    &kp DQT   &kp GRAV    &kp TILDE   &sys_reset
+        &kp PRCT  &kp DLLR  &kp HASH    &kp ATSN  &kp STAR        &kp CRRT    &kp DQT   &kp GRAV    &kp QUOT   &kp TILDE
         &kp PIPE  &kp AMPS  &kp QMARK   &kp BANG  &kp PLUS        &kp COLON   &kp MINUS  &kp UNDER   &kp EQUAL   &kp SEMI
         &kp LT    &kp LBKT  &kp LPAR    &kp LBRC  &kp BSLH        &kp FSLH    &kp RBRC  &kp RPAR    &kp RBKT    &kp GT
                                         &kp LGUI  &kp LSFT        &trans  &mo MEDIA 
@@ -178,7 +178,7 @@
       bindings = <
         &kp F1  &kp F2    &kp F3    &kp F4    &bt BT_CLR            &kp C_BRI_UP  &kp C_VOL_DN  &kp C_MUTE  &kp C_VOL_UP  &tog GAME
         &kp F5  &kp F6    &kp F7    &kp F8    &bt BT_PRV            &kp C_BRI_DN  &kp LSFT      &kp LGUI    &kp LALT      &kp LCTL 
-        &kp F9  &kp F10   &kp F11   &kp F12   &bootloader           &trans        &kp C_PREV    &kp C_PP    &kp C_NEXT    &tog ALTLAYOUT   
+        &kp F9  &kp F10   &kp F11   &kp F12   &bootloader           &sys_reset    &kp C_PREV    &kp C_PP    &kp C_NEXT    &tog ALTLAYOUT   
                                 &bt BT_SEL 0 &bt BT_NXT             &trans &trans
       >;
     };
