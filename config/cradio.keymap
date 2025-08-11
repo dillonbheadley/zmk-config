@@ -20,7 +20,7 @@
 #define GAME 4
 
 &lt {
-  quick-tap-ms = <100>;
+  quick-tap-ms = <150>;
 };
 
 &sk {
@@ -105,7 +105,7 @@
     shrtct {
       timeout-ms = <50>;
       key-positions = <13 16>;
-      bindings = <&kp LC(LG(LALT))>;
+      bindings = <&sk LC(LG(LALT))>;
       layers = <DEFAULT>;
     };
 
