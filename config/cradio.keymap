@@ -99,7 +99,7 @@
     fslh {
       timeout-ms = <50>;
       key-positions = <7 8>;
-      bindings = <&kp fslh>;
+      bindings = <&kp FSLH>;
       layers = <DEFAULT>;
     };
 
