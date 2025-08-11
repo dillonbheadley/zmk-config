@@ -20,7 +20,7 @@
 #define GAME 4
 
 &lt {
-  quick-tap-ms = <100>
+  quick-tap-ms = <100>;
 };
 
 &sk {
