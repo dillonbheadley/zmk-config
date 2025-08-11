@@ -207,7 +207,7 @@
       bindings = <&msc SCRL_RIGHT>;
       layers = <FUNC>;
     };
-  }
+  };
 
   behaviors {
     hrml: home_row_mod_left {
