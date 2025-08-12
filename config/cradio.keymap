@@ -318,7 +318,7 @@
                                               &none  &none            &none  &none
       >;
     };
-OalOOOOYYYOhdhdhdhdOOaohdhdhdhdhdOOaoOOhdUUalal      
+      
     symbols_layer {      
       bindings = <
         &none       &kp N1  &kp N2  &kp N3  &none                                   &none   &kp BSLH   &kp GRAV   &kp PIPE   &none  
