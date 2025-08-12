@@ -48,57 +48,63 @@
       bindings = <&kp Q>;
       layers = <DEFAULT>;
     };
-    v {
-      timeout-ms = <50>;
-      key-positions = <2 3>;
-      bindings = <&kp V>;
-      layers = <DEFAULT>;
-    };
-    w {
-      timeout-ms = <50>;
-      key-positions = <11 12>;
-      bindings = <&kp W>;
-      layers = <DEFAULT>;
-    };
-    b {
-      timeout-ms = <50>;
-      key-positions = <12 13>;
-      bindings = <&kp B>;
-      layers = <DEFAULT>;
-    };
     z {
       timeout-ms = <50>;
-      key-positions = <21 22>;
+      key-positions = <2 3>;
       bindings = <&kp Z>;
       layers = <DEFAULT>;
     };
-    p {
+    // w {
+    //   timeout-ms = <50>;
+    //   key-positions = <11 12>;
+    //   bindings = <&kp W>;
+    //   layers = <DEFAULT>;
+    // };
+    g {
+      timeout-ms = <50>;
+      key-positions = <12 13>;
+      bindings = <&kp G>;
+      layers = <DEFAULT>;
+    };
+    x {
+      timeout-ms = <50>;
+      key-positions = <21 22>;
+      bindings = <&kp X>;
+      layers = <DEFAULT>;
+    };
+    v {
       timeout-ms = <50>;
       key-positions = <22 23>;
-      bindings = <&kp P>;
+      bindings = <&kp V>;
       layers = <DEFAULT>;
     };
-    dot {
+    j {
       timeout-ms = <50>;
-      key-positions = <16 17>;
-      bindings = <&kp DOT>;
-      layers = <DEFAULT>;
-    };
-    cmma {
-      timeout-ms = <50>;
-      key-positions = <17 18>;
-      bindings = <&kp COMMA>;
+      key-positions = <6 7>;
+      bindings = <&kp J>;
       layers = <DEFAULT>;
     };
     quot {
       timeout-ms = <50>;
-      key-positions = <6 7>;
+      key-positions = <7 8>;
       bindings = <&kp QUOT>;
+      layers = <DEFAULT>;
+    };
+    y {
+      timeout-ms = <50>;
+      key-positions = <16 17>;
+      bindings = <&kp Y>;
       layers = <DEFAULT>;
     };
     fslh {
       timeout-ms = <50>;
-      key-positions = <7 8>;
+      key-positions = <17 18>;
+      bindings = <&kp FSLH>;
+      layers = <DEFAULT>;
+    };
+    k {
+      timeout-ms = <50>;
+      key-positions = <26 27>;
       bindings = <&kp FSLH>;
       layers = <DEFAULT>;
     };
@@ -325,10 +331,13 @@
     compatible = "zmk,keymap";
     default_layer {
       // v p z q b w . , ' /
+        // &none  &kp G  &kp D  &kp L  &none                               &none  &kp U  &kp O  &kp Y  &none 
+        // &hrml LCTL N  &hrml LALT S  &hrml LGUI T  &hrml LSFT H  &none    &none  &hrmr LSFT A  &hrmr LGUI E  &hrmr LALT I  &hrmr LCTL C
+        // &none  &kp F  &kp M  &kp R  &lt NAV BKSP                        &lt SYMB SPACE  &kp K  &kp J  &kp X  &none
       bindings = <
-        &none  &kp G  &kp D  &kp L  &none                               &none  &kp U  &kp O  &kp Y  &none 
-        &hrml LCTL N  &hrml LALT S  &hrml LGUI T  &hrml LSFT H  &none    &none  &hrmr LSFT A  &hrmr LGUI E  &hrmr LALT I  &hrmr LCTL C
-        &none  &kp F  &kp M  &kp R  &lt NAV BKSP                        &lt SYMB SPACE  &kp K  &kp J  &kp X  &none
+        &none  &kp W  &kp M  &kp B  &none                               &none  &kp F  &kp O  &kp U  &none 
+        &hrml LCTL N  &hrml LALT R  &hrml LGUI S  &hrml LSFT T  &none    &none  &hrmr LSFT H  &hrmr LGUI E  &hrmr LALT I  &hrmr LCTL A
+        &none  &kp L  &kp C  &kp D  &lt NAV BKSP                        &lt SYMB SPACE  &kp P  &kp COMMA  &kp DOT  &none
                                                 &none  &none            &none  &none
       >;
     };
