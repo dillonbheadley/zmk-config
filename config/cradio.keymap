@@ -44,7 +44,7 @@
     compatible = "zmk,combos";
     q {
       timeout-ms = <50>;
-      key-positions = <1 2>;
+      key-positions = <21 22>;
       bindings = <&kp Q>;
       layers = <DEFAULT>;
     };
@@ -66,12 +66,18 @@
       bindings = <&kp G>;
       layers = <DEFAULT>;
     };
-    x {
+    b {
       timeout-ms = <50>;
-      key-positions = <21 22>;
-      bindings = <&kp X>;
+      key-positions = <1 2>;
+      bindings = <&kp B>;
       layers = <DEFAULT>;
     };
+    // x {
+    //   timeout-ms = <50>;
+    //   key-positions = <21 22>;
+    //   bindings = <&kp X>;
+    //   layers = <DEFAULT>;
+    // };
     v {
       timeout-ms = <50>;
       key-positions = <22 23>;
@@ -330,14 +336,23 @@
   keymap {
     compatible = "zmk,keymap";
     default_layer {
-      // v p z q b w . , ' /
-        // &none  &kp G  &kp D  &kp L  &none                               &none  &kp U  &kp O  &kp Y  &none 
-        // &hrml LCTL N  &hrml LALT S  &hrml LGUI T  &hrml LSFT H  &none    &none  &hrmr LSFT A  &hrmr LGUI E  &hrmr LALT I  &hrmr LCTL C
-        // &none  &kp F  &kp M  &kp R  &lt NAV BKSP                        &lt SYMB SPACE  &kp K  &kp J  &kp X  &none
+      // northstar
+      // QWMBZ JFOU:
+      // NRSTG YHEIA
+      // XLCDV KP,./
+
+      // graphite
+      // bldwz ‘fouj
+      // nrtsg yhaei
+      // qxmcv kp.,/
+    
+      // &none  &kp W  &kp M  &kp B  &none                               &none  &kp F  &kp O  &kp U  &none 
+      // &hrml LCTL N  &hrml LALT R  &hrml LGUI S  &hrml LSFT T  &none    &none  &hrmr LSFT H  &hrmr LGUI E  &hrmr LALT I  &hrmr LCTL A
+      // &none  &kp L  &kp C  &kp D  &lt NAV BKSP                        &lt SYMB SPACE  &kp P  &kp COMMA  &kp DOT  &none
       bindings = <
-        &none  &kp W  &kp M  &kp B  &none                               &none  &kp F  &kp O  &kp U  &none 
-        &hrml LCTL N  &hrml LALT R  &hrml LGUI S  &hrml LSFT T  &none    &none  &hrmr LSFT H  &hrmr LGUI E  &hrmr LALT I  &hrmr LCTL A
-        &none  &kp L  &kp C  &kp D  &lt NAV BKSP                        &lt SYMB SPACE  &kp P  &kp COMMA  &kp DOT  &none
+        &none  &kp L  &kp D  &kp W  &none                               &none  &kp F  &kp O  &kp U  &none 
+        &hrml LCTL N  &hrml LALT R  &hrml LGUI T  &hrml LSFT S  &none    &none  &hrmr LSFT H  &hrmr LGUI A  &hrmr LALT E  &hrmr LCTL I
+        &none  &kp X  &kp M  &kp C  &lt NAV BKSP                        &lt SYMB SPACE  &kp P  &kp COMMA  &kp DOT  &none
                                                 &none  &none            &none  &none
       >;
     };
