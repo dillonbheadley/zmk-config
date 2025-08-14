@@ -44,7 +44,7 @@
     compatible = "zmk,combos";
     q {
       timeout-ms = <100>;
-      key-positions = <1 2>;
+      key-positions = <11 12>;
       bindings = <&kp Q>;
       layers = <DEFAULT>;
     };
@@ -56,7 +56,7 @@
     };
     enter {
       timeout-ms = <50>;
-      key-positions = <11 12>;
+      key-positions = <11 12 13>;
       bindings = <&kp ENTER>;
       layers = <DEFAULT>;
     };
