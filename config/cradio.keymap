@@ -54,12 +54,6 @@
       bindings = <&kp Z>;
       layers = <DEFAULT>;
     };
-    enter {
-      timeout-ms = <50>;
-      key-positions = <11 12 13>;
-      bindings = <&kp ENTER>;
-      layers = <DEFAULT>;
-    };
     g {
       timeout-ms = <50>;
       key-positions = <12 13>;
@@ -116,7 +110,7 @@
     };
     britup {
       timeout-ms = <50>;
-      key-positions = <1 2 3>;
+      key-positions = <11 12 13>;
       bindings = <&kp C_BRI_UP>;
       layers = <DEFAULT>;
     };
@@ -167,6 +161,12 @@
       timeout-ms = <50>;
       key-positions = <16 17 18>;
       bindings = <&kp PG_DN>;
+      layers = <NAV>;
+    };
+    enter {
+      timeout-ms = <50>;
+      key-positions = <11 12 13>;
+      bindings = <&kp ENTER>;
       layers = <NAV>;
     };
 
