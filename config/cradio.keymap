@@ -311,12 +311,12 @@
       mods = <(MOD_LSFT)>;
     };
 
-    // left_thumb: left_thumb {
-    //     compatible = "zmk,behavior-tap-dance";
-    //     #binding-cells = <0>;
-    //     tapping-term-ms = <200>;
-    //     bindings = <&ml NAV LC(LG(LALT))>, <&kp LSHIFT>;
-    // };
+    td_qu: tap_dance_q {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&kp U>, <&kp Q &kp U>;
+    };
 
     conditional_layers {
       compatible = "zmk,conditional-layers";
