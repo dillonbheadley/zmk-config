@@ -43,7 +43,7 @@
   combos {
     compatible = "zmk,combos";
     q {
-      timeout-ms = <50>;
+      timeout-ms = <60>;
       key-positions = <1 2>;
       bindings = <&kp Q>;
       layers = <DEFAULT>;
@@ -54,12 +54,12 @@
       bindings = <&kp Z>;
       layers = <DEFAULT>;
     };
-    // w {
-    //   timeout-ms = <50>;
-    //   key-positions = <11 12>;
-    //   bindings = <&kp W>;
-    //   layers = <DEFAULT>;
-    // };
+    enter {
+      timeout-ms = <50>;
+      key-positions = <11 12>;
+      bindings = <&kp ENTER>;
+      layers = <DEFAULT>;
+    };
     g {
       timeout-ms = <50>;
       key-positions = <12 13>;
@@ -72,12 +72,12 @@
       bindings = <&kp B>;
       layers = <DEFAULT>;
     };
-    // x {
-    //   timeout-ms = <50>;
-    //   key-positions = <21 22>;
-    //   bindings = <&kp X>;
-    //   layers = <DEFAULT>;
-    // };
+    x {
+      timeout-ms = <50>;
+      key-positions = <21 22>;
+      bindings = <&kp X>;
+      layers = <DEFAULT>;
+    };
     v {
       timeout-ms = <50>;
       key-positions = <22 23>;
