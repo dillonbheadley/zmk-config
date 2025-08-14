@@ -44,7 +44,7 @@
     compatible = "zmk,combos";
     q {
       timeout-ms = <50>;
-      key-positions = <21 22>;
+      key-positions = <1 2>;
       bindings = <&kp Q>;
       layers = <DEFAULT>;
     };
@@ -350,9 +350,9 @@
       // &hrml LCTL N  &hrml LALT R  &hrml LGUI S  &hrml LSFT T  &none    &none  &hrmr LSFT H  &hrmr LGUI E  &hrmr LALT I  &hrmr LCTL A
       // &none  &kp L  &kp C  &kp D  &lt NAV BKSP                        &lt SYMB SPACE  &kp P  &kp COMMA  &kp DOT  &none
       bindings = <
-        &none  &kp L  &kp D  &kp W  &none                               &none  &kp F  &kp O  &kp U  &none 
-        &hrml LCTL N  &hrml LALT R  &hrml LGUI T  &hrml LSFT S  &none    &none  &hrmr LSFT H  &hrmr LGUI A  &hrmr LALT E  &hrmr LCTL I
-        &none  &kp X  &kp M  &kp C  &lt NAV BKSP                        &lt SYMB SPACE  &kp P  &kp COMMA  &kp DOT  &none
+        &none  &kp L  &kp D  &kp B  &none                               &none  &kp F  &kp O  &kp U  &none 
+        &hrml LCTL N  &hrml LALT R  &hrml LGUI T  &hrml LSFT S  &none    &none  &hrmr LSFT H  &hrmr LGUI E  &hrmr LALT I  &hrmr LCTL A
+        &none  &kp W  &kp M  &kp C  &lt NAV BKSP                        &lt SYMB SPACE  &kp P  &kp COMMA  &kp DOT  &none
                                                 &none  &none            &none  &none
       >;
     };
