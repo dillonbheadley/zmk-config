@@ -251,6 +251,15 @@
     };
   };
 
+  macros {
+    macro_qu: macro_qu {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings
+          = <&macro_tap &kp Q &kp U>;
+      };
+  };
+
   behaviors {
     hrml: home_row_mod_left {
       compatible = "zmk,behavior-hold-tap";
@@ -315,7 +324,7 @@
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp U>, <&kp Q> <&kp U>;
+      bindings = <&kp U>, <&macro_qu>;
     };
 
     conditional_layers {
