@@ -43,7 +43,7 @@
   combos {
     compatible = "zmk,combos";
     q {
-      timeout-ms = <80>;
+      timeout-ms = <100>;
       key-positions = <1 2>;
       bindings = <&kp Q>;
       layers = <DEFAULT>;
@@ -315,7 +315,7 @@
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&kp U>, <&kp Q &kp U>;
+      bindings = <&kp U>, <&kp Q> <&kp U>;
     };
 
     conditional_layers {
