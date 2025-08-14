@@ -43,7 +43,7 @@
   combos {
     compatible = "zmk,combos";
     q {
-      timeout-ms = <50>;
+      timeout-ms = <80>;
       key-positions = <1 2>;
       bindings = <&kp Q>;
       layers = <DEFAULT>;
@@ -340,11 +340,8 @@
       // nrtsg yhaei
       // qxmcv kp.,/
     
-      // &none  &kp W  &kp M  &kp B  &none                               &none  &kp F  &kp O  &kp U  &none 
-      // &hrml LCTL N  &hrml LALT R  &hrml LGUI S  &hrml LSFT T  &none    &none  &hrmr LSFT H  &hrmr LGUI E  &hrmr LALT I  &hrmr LCTL A
-      // &none  &kp L  &kp C  &kp D  &lt NAV BKSP                        &lt SYMB SPACE  &kp P  &kp COMMA  &kp DOT  &none
       bindings = <
-        &none  &kp L  &kp D  &kp B  &none                               &none  &kp F  &kp O  &kp U  &none 
+        &none  &kp L  &kp D  &kp B  &none                               &none  &kp F  &kp O  &td_qu  &none 
         &hrml LCTL N  &hrml LALT R  &hrml LGUI T  &hrml LSFT S  &none    &none  &hrmr LSFT H  &hrmr LGUI E  &hrmr LALT I  &hrmr LCTL A
         &none  &kp W  &kp M  &kp C  &lt NAV BKSP                        &lt SYMB SPACE  &kp P  &kp COMMA  &kp DOT  &none
                                                 &none  &none            &none  &none
