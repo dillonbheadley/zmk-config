@@ -66,12 +66,6 @@
       bindings = <&kp G>;
       layers = <DEFAULT>;
     };
-    b {
-      timeout-ms = <50>;
-      key-positions = <1 2>;
-      bindings = <&kp B>;
-      layers = <DEFAULT>;
-    };
     x {
       timeout-ms = <50>;
       key-positions = <21 22>;
