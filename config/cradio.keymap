@@ -41,53 +41,54 @@
 / { 
 
   combos {
+    // b v z j k
     compatible = "zmk,combos";
-    q {
-      timeout-ms = <50>;
-      key-positions = <11 12>;
-      bindings = <&kp Q>;
-      layers = <DEFAULT>;
-    };
     z {
       timeout-ms = <50>;
       key-positions = <2 3>;
       bindings = <&kp Z>;
       layers = <DEFAULT>;
     };
-    g {
+    b {
       timeout-ms = <50>;
-      key-positions = <12 13>;
-      bindings = <&kp G>;
-      layers = <DEFAULT>;
-    };
-    x {
-      timeout-ms = <50>;
-      key-positions = <21 22>;
-      bindings = <&kp X>;
+      key-positions = <11 12>;
+      bindings = <&kp Q>;
       layers = <DEFAULT>;
     };
     v {
       timeout-ms = <50>;
-      key-positions = <22 23>;
+      key-positions = <12 13>;
       bindings = <&kp V>;
       layers = <DEFAULT>;
     };
-    j {
-      timeout-ms = <50>;
-      key-positions = <6 7>;
-      bindings = <&kp J>;
-      layers = <DEFAULT>;
-    };
+    // x {
+    //   timeout-ms = <50>;
+    //   key-positions = <21 22>;
+    //   bindings = <&kp X>;
+    //   layers = <DEFAULT>;
+    // };
+    // z {
+    //   timeout-ms = <50>;
+    //   key-positions = <22 23>;
+    //   bindings = <&kp Z>;
+    //   layers = <DEFAULT>;
+    // };
+    // j {
+    //   timeout-ms = <50>;
+    //   key-positions = <6 7>;
+    //   bindings = <&kp J>;
+    //   layers = <DEFAULT>;
+    // };
     quot {
       timeout-ms = <50>;
       key-positions = <7 8>;
       bindings = <&kp QUOT>;
       layers = <DEFAULT>;
     };
-    y {
+    j {
       timeout-ms = <50>;
       key-positions = <16 17>;
-      bindings = <&kp Y>;
+      bindings = <&kp J>;
       layers = <DEFAULT>;
     };
     fslh {
@@ -320,13 +321,6 @@
       mods = <(MOD_LSFT)>;
     };
 
-    td_qu: tap_dance_q {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&kp U>, <&macro_qu>;
-    };
-
     conditional_layers {
       compatible = "zmk,conditional-layers";
       tri_layer {
@@ -348,11 +342,17 @@
       // bldwz ‘fouj
       // nrtsg yhaei
       // qxmcv kp.,/
+
+      // Caster
+      // bwdl; /fouj
+      // cstrx qnaih
+      // vygmz =p.,k
+      //     e
     
       bindings = <
-        &none  &kp L  &kp D  &kp B  &none                               &none  &kp F  &kp O  &td_qu  &none 
-        &hrml LCTL N  &hrml LALT R  &hrml LGUI T  &hrml LSFT S  &none    &none  &hrmr LSFT H  &hrmr LGUI E  &hrmr LALT I  &hrmr LCTL A
-        &none  &kp W  &kp M  &kp C  &lt NAV E                        &lt SYMB SPACE  &kp P  &kp COMMA  &kp DOT  &none
+        &none  &kp W  &kp L  &kp D  &none                               &none  &kp F  &kp O  &kp U  &none 
+        &hrml LCTL C  &hrml LALT S  &hrml LGUI R  &hrml LSFT T  &kp X    &kp Q  &hrmr LSFT N  &hrmr LGUI A  &hrmr LALT I  &hrmr LCTL H
+        &none  &kp Y  &kp G  &kp M  &lt NAV E                           &lt SYMB SPACE  &kp P  &kp DOT  &kp COMMA  &none
                                                 &none  &none            &none  &none
       >;
     };
