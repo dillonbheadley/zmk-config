@@ -52,7 +52,7 @@
     b {
       timeout-ms = <50>;
       key-positions = <11 12>;
-      bindings = <&kp Q>;
+      bindings = <&kp B>;
       layers = <DEFAULT>;
     };
     v {
