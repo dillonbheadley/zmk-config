@@ -81,8 +81,14 @@
     // };
     quot {
       timeout-ms = <50>;
-      key-positions = <7 8>;
+      key-positions = <6 7>;
       bindings = <&kp QUOT>;
+      layers = <DEFAULT>;
+    };
+    fslh {
+      timeout-ms = <50>;
+      key-positions = <7 8>;
+      bindings = <&kp FSLH>;
       layers = <DEFAULT>;
     };
     j {
@@ -91,15 +97,9 @@
       bindings = <&kp J>;
       layers = <DEFAULT>;
     };
-    fslh {
-      timeout-ms = <50>;
-      key-positions = <17 18>;
-      bindings = <&kp FSLH>;
-      layers = <DEFAULT>;
-    };
     k {
       timeout-ms = <50>;
-      key-positions = <26 27>;
+      key-positions = <17 18>;
       bindings = <&kp K>;
       layers = <DEFAULT>;
     };
