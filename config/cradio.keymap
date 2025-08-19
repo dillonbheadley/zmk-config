@@ -351,7 +351,7 @@
     
       bindings = <
         &none  &kp W  &kp L  &kp D  &none                               &none  &kp F  &kp O  &kp U  &none 
-        &hrml LCTL C  &hrml LALT S  &hrml LGUI R  &hrml LSFT T  &kp X    &kp Q  &hrmr LSFT N  &hrmr LGUI A  &hrmr LALT I  &hrmr LCTL H
+        &hrml LCTL C  &hrml LALT S  &hrml LGUI T  &hrml LSFT R  &kp X    &kp Q  &hrmr LSFT N  &hrmr LGUI A  &hrmr LALT I  &hrmr LCTL H
         &none  &kp Y  &kp G  &kp M  &lt NAV E                           &lt SYMB SPACE  &kp P  &kp DOT  &kp COMMA  &none
                                                 &none  &none            &none  &none
       >;
