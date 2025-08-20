@@ -350,7 +350,7 @@
       //     e
     
       bindings = <
-        &none  &kp Y  &kp D  &kp L  &none                               &none  &kp F  &kp O  &kp U  &none 
+        &none  &kp Y  &kp L  &kp D  &none                               &none  &kp F  &kp O  &kp U  &none 
         &hrml LCTL C  &hrml LALT S  &hrml LGUI T  &hrml LSFT H  &kp B    &kp J  &hrmr LSFT N  &hrmr LGUI A  &hrmr LALT I  &hrmr LCTL R
         &none  &kp W  &kp G  &kp M  &lt NAV E                           &lt SYMB SPACE  &kp P  &kp DOT  &kp COMMA  &none
                                                 &none  &none            &none  &none
