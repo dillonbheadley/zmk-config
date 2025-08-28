@@ -85,16 +85,16 @@
       bindings = <&kp QUOT>;
       layers = <DEFAULT>;
     };
-    fslh {
-      timeout-ms = <50>;
-      key-positions = <7 8>;
-      bindings = <&kp FSLH>;
-      layers = <DEFAULT>;
-    };
     q {
       timeout-ms = <50>;
-      key-positions = <6 7>;
+      key-positions = <7 8>;
       bindings = <&kp Q>;
+      layers = <DEFAULT>;
+    };
+    fslh {
+      timeout-ms = <50>;
+      key-positions = <6 7>;
+      bindings = <&kp FSLH>;
       layers = <DEFAULT>;
     };
     k {
