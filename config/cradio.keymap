@@ -164,10 +164,10 @@
       bindings = <&kp PG_DN>;
       layers = <NAV>;
     };
-    enter {
+    bksp {
       timeout-ms = <50>;
       key-positions = <11 12 13>;
-      bindings = <&kp ENTER>;
+      bindings = <&kp BKSP>;
       layers = <NAV>;
     };
 
