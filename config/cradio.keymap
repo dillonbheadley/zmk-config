@@ -100,7 +100,7 @@
     cmd {
       timeout-ms = <50>;
       key-positions = <12 17>;
-      bindings = <&kp LGUI>;
+      bindings = <&sk LGUI>;
       layers = <DEFAULT>;
     };
     britup {
