@@ -97,6 +97,12 @@
       bindings = <&sk LC(LG(LALT))>;
       layers = <DEFAULT>;
     };
+    caps {
+      timeout-ms = <50>;
+      key-positions = <12 17>;
+      bindings = <&kp CAPS>;
+      layers = <DEFAULT>;
+    };
     britup {
       timeout-ms = <50>;
       key-positions = <11 12 13>;
@@ -296,13 +302,6 @@
       mods = <(MOD_LSFT)>;
     };
 
-    lthumb: tap_dance_left_thumb {
-      compatible = "zmk,behavior-tap-dance";
-      #binding-cells = <0>;
-      tapping-term-ms = <150>;
-      bindings = <&lm NAV LGUI>, <&kp LSHFT>;
-    };
-
     conditional_layers {
       compatible = "zmk,conditional-layers";
       tri_layer {
@@ -333,8 +332,8 @@
     
       bindings = <
         &kp W  &kp C  &kp L  &kp D  &none                               &none  &kp P  &kp O  &kp U  &kp Y 
-        &hrml LCTL R  &hrml LALT S  &hrml LGUI T  &hrml LSFT H  &none   &none  &hrmr LSFT N  &hrmr LGUI E  &hrmr LALT A  &hrmr LCTL I
-        &none  &kp G  &kp M  &kp F  &lm NAV LGUI                             &lt SYMB SPACE  &kp B  &kp DOT  &kp COMMA  &none
+        &kp R  &kp S  &kp T  &kp H  &none                               &none  &kp N  &kp E  &kp A  &kp I
+        &none  &kp G  &kp M  &kp F  &lm NAV LGUI                      &lt SYMB SPACE  &kp B  &kp DOT  &kp COMMA  &none
                                                 &none  &none            &none  &none
       >;
     };
