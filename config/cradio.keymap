@@ -97,10 +97,10 @@
       bindings = <&sk LC(LG(LALT))>;
       layers = <DEFAULT>;
     };
-    caps {
+    cmd {
       timeout-ms = <50>;
       key-positions = <12 17>;
-      bindings = <&kp CAPS>;
+      bindings = <&kp LGUI>;
       layers = <DEFAULT>;
     };
     britup {
