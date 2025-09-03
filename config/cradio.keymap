@@ -299,8 +299,8 @@
     lthumb: tap_dance_left_thumb {
       compatible = "zmk,behavior-tap-dance";
       #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&lm NAV LGUI>, <&mt LSHFT LC(LG(LALT))>;
+      tapping-term-ms = <150>;
+      bindings = <&lm NAV LGUI>, <&kp LSHFT>;
     };
 
     conditional_layers {
