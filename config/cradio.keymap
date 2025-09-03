@@ -352,7 +352,7 @@
         &kp DOT       &shft1  &kp N2  &kp N3  &none                                   &none   &kp GRAV   &kp AMPS   &kp PIPE   &none  
         &hrml LCTL N0    &hrml LALT N4  &hrml LGUI N5  &hrml LSFT N6  &none       &none   &hrmr LSFT MINUS  &hrmr LGUI UNDER   &hrmr LALT COLON  &hrmr LCTL SEMI  
         &none       &kp N7  &kp N8  &kp N9  &lt NAV BKSP                                   &trans  &kp PLUS  &kp EQUAL  &kp BSLH  &none 
-                                  &none  &none                                   &none   &sk LGUI
+                                  &none  &none                                   &none   &none
       >;
     };
 
