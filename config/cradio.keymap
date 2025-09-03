@@ -41,7 +41,7 @@
 / { 
 
   combos {
-    // b v z q j k
+    // z x v q j k
     compatible = "zmk,combos";
     z {
       timeout-ms = <50>;
@@ -61,46 +61,34 @@
       bindings = <&kp V>;
       layers = <DEFAULT>;
     };
-    // x {
-    //   timeout-ms = <50>;
-    //   key-positions = <21 22>;
-    //   bindings = <&kp X>;
-    //   layers = <DEFAULT>;
-    // };
-    // z {
-    //   timeout-ms = <50>;
-    //   key-positions = <22 23>;
-    //   bindings = <&kp Z>;
-    //   layers = <DEFAULT>;
-    // };
-    // j {
-    //   timeout-ms = <50>;
-    //   key-positions = <6 7>;
-    //   bindings = <&kp J>;
-    //   layers = <DEFAULT>;
-    // };
-    quot {
-      timeout-ms = <50>;
-      key-positions = <16 17>;
-      bindings = <&kp QUOT>;
-      layers = <DEFAULT>;
-    };
     q {
       timeout-ms = <50>;
-      key-positions = <7 8>;
+      key-positions = <6 7>;
       bindings = <&kp Q>;
       layers = <DEFAULT>;
     };
-    fslh {
+    quot {
       timeout-ms = <50>;
-      key-positions = <6 7>;
-      bindings = <&kp FSLH>;
+      key-positions = <7 8>;
+      bindings = <&kp QUOT>;
+      layers = <DEFAULT>;
+    };
+    j {
+      timeout-ms = <50>;
+      key-positions = <16 17>;
+      bindings = <&kp J>;
       layers = <DEFAULT>;
     };
     k {
       timeout-ms = <50>;
       key-positions = <17 18>;
       bindings = <&kp K>;
+      layers = <DEFAULT>;
+    };
+    fslh {
+      timeout-ms = <50>;
+      key-positions = <26 27>;
+      bindings = <&kp FSLH>;
       layers = <DEFAULT>;
     };
     shrtct {
@@ -281,9 +269,8 @@
       bindings = <&kp>, <&kp>;
     };
 
-    ml: mod_layer {
+    lm: layer_mod {
       compatible = "zmk,behavior-hold-tap";
-      label = "MOD_LAYER";
       #binding-cells = <2>;
       flavor = "hold-preferred";
       tapping-term-ms = <150>;
@@ -307,6 +294,13 @@
       #binding-cells = <0>;
       bindings = <&kp N1>, <&kp COMMA>;
       mods = <(MOD_LSFT)>;
+    };
+
+    lthumb: tap_dance_left_thumb {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&lm NAV LGUI>, <&mt LSHFT LC(LG(LALT))>;
     };
 
     conditional_layers {
@@ -338,9 +332,9 @@
       //     e
     
       bindings = <
-        &kp P  &kp F  &kp L  &kp D  &none                               &none  &kp U  &kp O  &kp Y  &kp J 
-        &hrml LCTL C  &hrml LALT S  &hrml LGUI T  &hrml LSFT H  &none   &none  &hrmr LSFT N  &hrmr LGUI A  &hrmr LALT I  &hrmr LCTL R
-        &none  &kp W  &kp G  &kp M  &lt NAV E                           &lt SYMB SPACE  &kp B  &kp DOT  &kp COMMA  &none
+        &kp W  &kp C  &kp L  &kp D  &none                               &none  &kp P  &kp O  &kp U  &kp Y 
+        &hrml LCTL R  &hrml LALT S  &hrml LGUI T  &hrml LSFT H  &none   &none  &hrmr LSFT N  &hrmr LGUI E  &hrmr LALT A  &hrmr LCTL I
+        &none  &kp G  &kp M  &kp F  &lthumb                             &lt SYMB SPACE  &kp B  &kp DOT  &kp COMMA  &none
                                                 &none  &none            &none  &none
       >;
     };
