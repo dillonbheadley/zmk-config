@@ -45,7 +45,7 @@
     compatible = "zmk,combos";
     t {
       timeout-ms = <50>;
-      key-positions = <3 12>;
+      key-positions = <2 3>;
       bindings = <&kp T>;
       layers = <DEFAULT>;
     };
@@ -57,13 +57,13 @@
     };
     b {
       timeout-ms = <50>;
-      key-positions = <12 23>;
+      key-positions = <22 23>;
       bindings = <&kp B>;
       layers = <DEFAULT>;
     };
     y {
       timeout-ms = <50>;
-      key-positions = <6 17>;
+      key-positions = <6 7>;
       bindings = <&kp Y>;
       layers = <DEFAULT>;
     };
@@ -75,7 +75,7 @@
     };
     n {
       timeout-ms = <50>;
-      key-positions = <17 26>;
+      key-positions = <26 27>;
       bindings = <&kp N>;
       layers = <DEFAULT>;
     };
