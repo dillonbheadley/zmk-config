@@ -43,54 +43,90 @@
   combos {
     // z x v q j k
     compatible = "zmk,combos";
+    t {
+      timeout-ms = <50>;
+      key-positions = <3 12>;
+      bindings = <&kp T>;
+      layers = <DEFAULT>;
+    };
+    g {
+      timeout-ms = <50>;
+      key-positions = <12 13>;
+      bindings = <&kp G>;
+      layers = <DEFAULT>;
+    };
     b {
       timeout-ms = <50>;
-      key-positions = <2 3>;
+      key-positions = <12 23>;
       bindings = <&kp B>;
       layers = <DEFAULT>;
     };
-    x {
+    y {
       timeout-ms = <50>;
-      key-positions = <11 12>;
-      bindings = <&kp X>;
+      key-positions = <6 17>;
+      bindings = <&kp Y>;
       layers = <DEFAULT>;
     };
-    z {
-      timeout-ms = <50>;
-      key-positions = <12 13>;
-      bindings = <&kp Z>;
-      layers = <DEFAULT>;
-    };
-    quot {
-      timeout-ms = <50>;
-      key-positions = <6 7>;
-      bindings = <&kp QUOT>;
-      layers = <DEFAULT>;
-    };
-    q {
-      timeout-ms = <50>;
-      key-positions = <7 8>;
-      bindings = <&kp Q>;
-      layers = <DEFAULT>;
-    };
-    j {
+    h {
       timeout-ms = <50>;
       key-positions = <16 17>;
-      bindings = <&kp J>;
+      bindings = <&kp H>;
       layers = <DEFAULT>;
     };
-    k {
+    n {
       timeout-ms = <50>;
-      key-positions = <17 18>;
-      bindings = <&kp K>;
+      key-positions = <17 26>;
+      bindings = <&kp N>;
       layers = <DEFAULT>;
     };
-    fslh {
-      timeout-ms = <50>;
-      key-positions = <26 27>;
-      bindings = <&kp FSLH>;
-      layers = <DEFAULT>;
-    };
+    // b {
+    //   timeout-ms = <50>;
+    //   key-positions = <2 3>;
+    //   bindings = <&kp B>;
+    //   layers = <DEFAULT>;
+    // };
+    // x {
+    //   timeout-ms = <50>;
+    //   key-positions = <11 12>;
+    //   bindings = <&kp X>;
+    //   layers = <DEFAULT>;
+    // };
+    // z {
+    //   timeout-ms = <50>;
+    //   key-positions = <12 13>;
+    //   bindings = <&kp Z>;
+    //   layers = <DEFAULT>;
+    // };
+    // quot {
+    //   timeout-ms = <50>;
+    //   key-positions = <6 7>;
+    //   bindings = <&kp QUOT>;
+    //   layers = <DEFAULT>;
+    // };
+    // q {
+    //   timeout-ms = <50>;
+    //   key-positions = <7 8>;
+    //   bindings = <&kp Q>;
+    //   layers = <DEFAULT>;
+    // };
+    // j {
+    //   timeout-ms = <50>;
+    //   key-positions = <16 17>;
+    //   bindings = <&kp J>;
+    //   layers = <DEFAULT>;
+    // };
+    // k {
+    //   timeout-ms = <50>;
+    //   key-positions = <17 18>;
+    //   bindings = <&kp K>;
+    //   layers = <DEFAULT>;
+    // };
+    // fslh {
+    //   timeout-ms = <50>;
+    //   key-positions = <26 27>;
+    //   bindings = <&kp FSLH>;
+    //   layers = <DEFAULT>;
+    // };
     shrtct {
       timeout-ms = <50>;
       key-positions = <13 16>;
@@ -334,9 +370,9 @@
         // &kp R  &kp S  &kp T  &kp H  &none                               &none  &kp N  &kp E  &kp A  &kp I
         // &none  &kp G  &kp M  &kp F  &lm NAV LSFT                      &lt SYMB SPACE  &kp B  &shftdot  &shftcmma  &none
       bindings = <
-        &kp Y  &kp W  &kp E  &kp R  &none                               &none  &kp U  &kp I  &kp O  &kp P 
-        &kp A  &kp S  &kp D  &kp F  &none                               &none  &kp T  &kp H  &kp L  &kp N
-        &none  &kp G  &kp C  &kp V  &lm NAV LSFT                      &lt SYMB SPACE  &kp M  &shftdot  &shftcmma  &none
+        &kp Q  &kp W  &kp E  &kp R  &none                               &none  &kp U  &kp I  &kp O  &kp Z 
+        &kp A  &kp S  &kp D  &kp F  &none                               &none  &kp J  &kp K  &kp L  &kp P
+        &none  &kp X  &kp C  &kp V  &lm NAV LSFT                      &lt SYMB SPACE  &kp M  &shftdot  &shftcmma  &none
                                                 &none  &none            &none  &none
       >;
     };
