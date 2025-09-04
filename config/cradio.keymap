@@ -97,12 +97,12 @@
     //   bindings = <&kp Z>;
     //   layers = <DEFAULT>;
     // };
-    // quot {
-    //   timeout-ms = <50>;
-    //   key-positions = <6 7>;
-    //   bindings = <&kp QUOT>;
-    //   layers = <DEFAULT>;
-    // };
+    quot {
+      timeout-ms = <50>;
+      key-positions = <17 18>;
+      bindings = <&kp QUOT>;
+      layers = <DEFAULT>;
+    };
     // q {
     //   timeout-ms = <50>;
     //   key-positions = <7 8>;
@@ -121,12 +121,12 @@
     //   bindings = <&kp K>;
     //   layers = <DEFAULT>;
     // };
-    // fslh {
-    //   timeout-ms = <50>;
-    //   key-positions = <26 27>;
-    //   bindings = <&kp FSLH>;
-    //   layers = <DEFAULT>;
-    // };
+    fslh {
+      timeout-ms = <50>;
+      key-positions = <7 8>;
+      bindings = <&kp FSLH>;
+      layers = <DEFAULT>;
+    };
     shrtct {
       timeout-ms = <50>;
       key-positions = <13 16>;
