@@ -41,104 +41,7 @@
 / { 
 
   combos {
-    // z x v q j k
     compatible = "zmk,combos";
-    t {
-      timeout-ms = <50>;
-      key-positions = <2 3>;
-      bindings = <&kp T>;
-      layers = <DEFAULT>;
-    };
-    g {
-      timeout-ms = <50>;
-      key-positions = <12 13>;
-      bindings = <&kp G>;
-      layers = <DEFAULT>;
-    };
-    b {
-      timeout-ms = <50>;
-      key-positions = <22 23>;
-      bindings = <&kp B>;
-      layers = <DEFAULT>;
-    };
-    y {
-      timeout-ms = <50>;
-      key-positions = <6 7>;
-      bindings = <&kp Y>;
-      layers = <DEFAULT>;
-    };
-    h {
-      timeout-ms = <50>;
-      key-positions = <16 17>;
-      bindings = <&kp H>;
-      layers = <DEFAULT>;
-    };
-    n {
-      timeout-ms = <50>;
-      key-positions = <26 27>;
-      bindings = <&kp N>;
-      layers = <DEFAULT>;
-    };
-    // b {
-    //   timeout-ms = <50>;
-    //   key-positions = <2 3>;
-    //   bindings = <&kp B>;
-    //   layers = <DEFAULT>;
-    // };
-    // x {
-    //   timeout-ms = <50>;
-    //   key-positions = <11 12>;
-    //   bindings = <&kp X>;
-    //   layers = <DEFAULT>;
-    // };
-    // z {
-    //   timeout-ms = <50>;
-    //   key-positions = <12 13>;
-    //   bindings = <&kp Z>;
-    //   layers = <DEFAULT>;
-    // };
-    quot {
-      timeout-ms = <50>;
-      key-positions = <17 18>;
-      bindings = <&kp QUOT>;
-      layers = <DEFAULT>;
-    };
-    // q {
-    //   timeout-ms = <50>;
-    //   key-positions = <7 8>;
-    //   bindings = <&kp Q>;
-    //   layers = <DEFAULT>;
-    // };
-    // j {
-    //   timeout-ms = <50>;
-    //   key-positions = <16 17>;
-    //   bindings = <&kp J>;
-    //   layers = <DEFAULT>;
-    // };
-    // k {
-    //   timeout-ms = <50>;
-    //   key-positions = <17 18>;
-    //   bindings = <&kp K>;
-    //   layers = <DEFAULT>;
-    // };
-    fslh {
-      timeout-ms = <50>;
-      key-positions = <7 8>;
-      bindings = <&kp FSLH>;
-      layers = <DEFAULT>;
-    };
-    shrtct {
-      timeout-ms = <50>;
-      key-positions = <13 16>;
-      bindings = <&sk LC(LG(LALT))>;
-      layers = <DEFAULT>;
-    };
-    cmd {
-      timeout-ms = <50>;
-      key-positions = <12 17>;
-      bindings = <&sk LGUI>;
-      layers = <DEFAULT>;
-    };
     britup {
       timeout-ms = <50>;
       key-positions = <11 12 13>;
@@ -180,24 +83,6 @@
       timeout-ms = <50>;
       key-positions = <7 8>;
       bindings = <&kp LC(LS(MINUS))>;
-      layers = <NAV>;
-    };
-    pgup {
-      timeout-ms = <50>;
-      key-positions = <6 7 8>;
-      bindings = <&kp PG_UP>;
-      layers = <NAV>;
-    };
-    pgdn {
-      timeout-ms = <50>;
-      key-positions = <16 17 18>;
-      bindings = <&kp PG_DN>;
-      layers = <NAV>;
-    };
-    bksp {
-      timeout-ms = <50>;
-      key-positions = <11 12 13>;
-      bindings = <&kp BKSP>;
       layers = <NAV>;
     };
 
@@ -282,15 +167,6 @@
     };
   };
 
-  macros {
-    macro_qu: macro_qu {
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-          = <&macro_tap &kp Q &kp U>;
-      };
-  };
-
   behaviors {
     hrml: home_row_mod_left {
       compatible = "zmk,behavior-hold-tap";
@@ -349,49 +225,30 @@
 
   keymap {
     compatible = "zmk,keymap";
-    default_layer {
-      // northstar
-      // QWMBZ JFOU:
-      // NRSTG YHEIA
-      // XLCDV KP,./
-
-      // graphite
-      // bldwz ‘fouj
-      // nrtsg yhaei
-      // qxmcv kp.,/
-
-      // Caster v2 https://www.reddit.com/r/KeyboardLayouts/comments/1hzt3ss/caster_layout/
-      // bydl; /fouj
-      // cstrx qnaih
-      // vwgmz =p.,k
-      //     e
-    
-        // &kp W  &kp C  &kp L  &kp D  &none                               &none  &kp P  &kp O  &kp U  &kp Y 
-        // &kp R  &kp S  &kp T  &kp H  &none                               &none  &kp N  &kp E  &kp A  &kp I
-        // &none  &kp G  &kp M  &kp F  &lm NAV LSFT                      &lt SYMB SPACE  &kp B  &shftdot  &shftcmma  &none
+    default_layer {    
       bindings = <
-        &kp Q  &kp W  &kp E  &kp R  &none                               &none  &kp U  &kp I  &kp O  &kp Z 
-        &kp A  &kp S  &kp D  &kp F  &none                               &none  &kp J  &kp K  &kp L  &kp P
-        &none  &kp X  &kp C  &kp V  &lm NAV LSFT                      &lt SYMB SPACE  &kp M  &shftdot  &shftcmma  &none
-                                                &none  &none            &none  &none
+        &kp Q  &kp W  &kp E  &kp R  &kp T                       &kp Y  &kp U  &kp I  &kp O  &kp Z 
+        &kp A  &kp S  &kp D  &kp F  &kp G                       &kp H  &kp J  &kp K  &kp L  &kp P
+        &kp Z  &kp X  &kp C  &kp V  &kp B                       &kp N  &kp M  &shftcmma  &shftdot  &kp FSLH
+                              &lm NAV LSFT  &sk LGUI            &sk LC(LG(LALT))  &lt SYMB SPACE
       >;
     };
 
     nav_layer {
       bindings = <
-        &kp ESC  &sk RALT  &key_repeat    &caps_word  &none           &none     &kp LBKT        &kp UP          &kp RBKT        &kp DEL 
-        &sk LCTL  &sk LALT  &sk LGUI    &sk LSFT  &none               &none     &kp LEFT        &kp DOWN        &kp RIGHT       &kp ENTER
-        &none   &kp TAB     &kp ENTER     &kp SPC     &trans   &lt SYMB BKSP    &kp C_PREV      &kp C_PP        &kp C_NEXT      &none 
-                                              &none  &none            &none  &none
+        &kp CAPS  &sk RALT  &key_repeat    &caps_word  &sk GLOBE                 &kp PG_UP   &kp LBKT        &kp UP          &kp RBKT        &kp DEL 
+        &sk LCTL  &sk LALT  &sk LGUI    &sk LSFT  &sk LC(RS(LALT))               &kp PG_DN     &kp LEFT        &kp DOWN        &kp RIGHT       &kp ENTER
+        &kp ESC   &kp TAB   &kp ENTER   &kp SPC   &kp BSPC                       &trans   &kp C_PREV      &kp C_PP        &kp C_NEXT      &none 
+                                              &trans  &none            &none  &lt SYMB BKSP
       >;
     };
       
     symbols_layer {      
       bindings = <
-        &kp DOT       &shft1  &kp N2  &kp N3  &none                                   &none   &kp GRAV   &kp AMPS   &kp PIPE   &none  
-        &hrml LCTL N0    &hrml LALT N4  &hrml LGUI N5  &hrml LSFT N6  &none       &none   &hrmr LSFT MINUS  &hrmr LGUI UNDER   &hrmr LALT COLON  &hrmr LCTL SEMI  
-        &none       &kp N7  &kp N8  &kp N9  &lt NAV BKSP                                   &trans  &kp PLUS  &kp EQUAL  &kp BSLH  &none 
-                                  &none  &none                                   &none   &none
+        &kp DOT       &shft1  &kp N2  &kp N3  &kp STAR                                   &none   &kp GRAV   &kp AMPS   &kp PIPE   &none  
+        &hrml LCTL N0    &hrml LALT N4  &hrml LGUI N5  &hrml LSFT N6  &kp ATSN       &none   &hrmr LSFT MINUS  &hrmr LGUI UNDER   &hrmr LALT COLON  &hrmr LCTL SEMI  
+        &none       &kp N7  &kp N8  &kp N9  &kp HASH                                   &trans  &kp PLUS  &kp EQUAL  &kp BSLH  &none 
+                                  &lt NAV BKSP  &trans                                   &trans   &trans
       >;
     };
 
@@ -403,7 +260,7 @@
         &bootloader  &kp F1    &kp F2      &kp F3    &none            &none   &msc SCRL_DOWN  &mmv MOVE_UP     &msc SCRL_UP    &none
         &sk LSFT   &mkp MCLK    &mkp RCLK   &mkp LCLK  &none      &none     &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &kp LC(UP)  
         &none    &kp F4    &kp F5      &kp F6  &trans              &trans    &sk LSFT        &sk LGUI         &sk LALT        &none
-                                          &none  &none            &none  &none  
+                                          &trans  &trans            &trans  &trans  
       >;
     };
 
