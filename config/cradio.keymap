@@ -230,7 +230,7 @@
         &kp Q  &kp W  &kp E  &kp R  &kp T                       &kp Y  &kp U  &kp I  &kp O  &kp Z 
         &kp A  &kp S  &kp D  &kp F  &kp G                       &kp H  &kp J  &kp K  &kp L  &kp P
         &kp Z  &kp X  &kp C  &kp V  &kp B                       &kp N  &kp M  &shftcmma  &shftdot  &kp FSLH
-                        &sk LGUI  &lm NAV LSFT            &lt SYMB SPACE  &sk LC(LG(LALT))
+                        &sk LSFT  &lm NAV LGUI            &lt SYMB SPACE  &sk LC(LG(LALT))
       >;
     };
 
