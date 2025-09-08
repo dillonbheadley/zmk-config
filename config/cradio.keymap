@@ -230,16 +230,16 @@
         &kp Q  &kp W  &kp E  &kp R  &kp T                       &kp Y  &kp U  &kp I  &kp O  &kp Z 
         &kp A  &kp S  &kp D  &kp F  &kp G                       &kp H  &kp J  &kp K  &kp L  &kp P
         &kp Z  &kp X  &kp C  &kp V  &kp B                       &kp N  &kp M  &shftcmma  &shftdot  &kp FSLH
-                              &lm NAV LSFT  &sk LGUI            &sk LC(LG(LALT))  &lt SYMB SPACE
+                        &sk LGUI  &lm NAV LSFT            &lt SYMB SPACE  &sk LC(LG(LALT))
       >;
     };
 
     nav_layer {
       bindings = <
         &kp CAPS  &sk RALT  &key_repeat    &caps_word  &sk GLOBE                 &kp PG_UP   &kp LBKT        &kp UP          &kp RBKT        &kp DEL 
-        &sk LCTL  &sk LALT  &sk LGUI    &sk LSFT  &sk LC(RS(LALT))               &kp PG_DN     &kp LEFT        &kp DOWN        &kp RIGHT       &kp ENTER
+        &sk LCTL  &sk LALT  &sk LGUI    &sk LSFT  &sk LC(RG(LALT))               &kp PG_DN     &kp LEFT        &kp DOWN        &kp RIGHT       &kp ENTER
         &kp ESC   &kp TAB   &kp ENTER   &kp SPC   &kp BSPC                       &trans   &kp C_PREV      &kp C_PP        &kp C_NEXT      &none 
-                                              &trans  &none            &none  &lt SYMB BKSP
+                                                  &trans  &trans            &lt SYMB BKSP  &trans
       >;
     };
       
@@ -248,7 +248,7 @@
         &kp DOT       &shft1  &kp N2  &kp N3  &kp STAR                                   &none   &kp GRAV   &kp AMPS   &kp PIPE   &none  
         &hrml LCTL N0    &hrml LALT N4  &hrml LGUI N5  &hrml LSFT N6  &kp ATSN       &none   &hrmr LSFT MINUS  &hrmr LGUI UNDER   &hrmr LALT COLON  &hrmr LCTL SEMI  
         &none       &kp N7  &kp N8  &kp N9  &kp HASH                                   &trans  &kp PLUS  &kp EQUAL  &kp BSLH  &none 
-                                  &lt NAV BKSP  &trans                                   &trans   &trans
+                                   &trans  &lt NAV BKSP                                   &trans   &trans
       >;
     };
 
