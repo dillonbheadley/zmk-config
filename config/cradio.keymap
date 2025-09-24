@@ -42,16 +42,28 @@
 
   combos {
     compatible = "zmk,combos";
+    b {
+      timeout-ms = <50>;
+      key-positions = <12 13>;
+      bindings = <&kp B>;
+      layers = <DEFAULT>;
+    };
     j {
       timeout-ms = <50>;
       key-positions = <16 17>;
       bindings = <&kp J>;
       layers = <DEFAULT>;
     };
-    b {
+    z {
       timeout-ms = <50>;
-      key-positions = <12 13>;
+      key-positions = <11 12>;
       bindings = <&kp B>;
+      layers = <DEFAULT>;
+    };
+    slash {
+      timeout-ms = <50>;
+      key-positions = <17 18>;
+      bindings = <&kp FSLH>;
       layers = <DEFAULT>;
     };
     cmd {
@@ -266,9 +278,9 @@
 
     nav_layer {
       bindings = <
-        &kp CAPS  &sk RALT  &key_repeat    &caps_word  &sk GLOBE                 &kp PG_UP   &kp LBKT        &kp UP          &kp RBKT        &kp DEL 
+        &kp ESC  &sk RALT  &key_repeat    &caps_word  &sk GLOBE                 &kp PG_UP   &kp LBKT        &kp UP          &kp RBKT        &kp DEL 
         &sk LCTL  &sk LALT  &sk LGUI    &sk LSFT  &sk LC(RG(LALT))               &kp PG_DN     &kp LEFT        &kp DOWN        &kp RIGHT       &kp ENTER
-        &kp ESC   &kp TAB   &kp ENTER   &kp SPC   &none                    &lt SYMB BKSP   &kp C_PREV      &kp C_PP        &kp C_NEXT      &none 
+        &kp CAPS   &kp TAB   &kp ENTER   &kp SPC   &none                    &lt SYMB BKSP   &kp C_PREV      &kp C_PP        &kp C_NEXT      &none 
                                                   &trans  &trans            &trans  &trans
       >;
     };
