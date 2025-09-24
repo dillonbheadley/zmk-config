@@ -278,7 +278,7 @@
         &kp DOT       &shft1  &kp N2  &kp N3  &kp STAR                                   &kp PLUS   &kp GRAV   &kp AMPS   &kp PIPE   &kp TILDE  
         &hrml LCTL N0    &hrml LALT N4  &hrml LGUI N5  &hrml LSFT N6  &kp ATSN       &kp EQUAL  &hrmr LSFT MINUS  &hrmr LGUI UNDER   &hrmr LALT COLON  &hrmr LCTL SEMI  
         &kp COMMA      &kp N7  &kp N8  &kp N9  &lt NAV BKSP                                   &trans  &kp DOLLAR  &kp PERCENT  &kp BSLH  &trans 
-                                   &trans  &                                   &trans   &trans
+                                   &trans  &trans                                   &trans   &trans
       >;
     };
 
