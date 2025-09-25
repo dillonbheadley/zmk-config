@@ -57,7 +57,7 @@
     z {
       timeout-ms = <50>;
       key-positions = <11 12>;
-      bindings = <&kp B>;
+      bindings = <&kp Z>;
       layers = <DEFAULT>;
     };
     slash {
