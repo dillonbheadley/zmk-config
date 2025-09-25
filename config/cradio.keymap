@@ -66,18 +66,7 @@
       bindings = <&kp FSLH>;
       layers = <DEFAULT>;
     };
-    cmd {
-      timeout-ms = <50>;
-      key-positions = <12 17>;
-      bindings = <&sk LGUI>;
-      layers = <DEFAULT>;
-    };
-    shrtct {
-      timeout-ms = <50>;
-      key-positions = <13 16>;
-      bindings = <&sk LC(LG(LALT))>;
-      layers = <DEFAULT>;
-    };
+
     britup {
       timeout-ms = <50>;
       key-positions = <11 12 13>;
