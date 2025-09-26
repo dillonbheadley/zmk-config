@@ -280,8 +280,8 @@
 
     nav_layer {
       bindings = <
-        &kp ESC  &sk RALT  &key_repeat    &caps_word  &sk GLOBE                 &kp PG_UP   &kp LBKT        &kp UP          &kp RBKT        &kp DEL 
-        &sk LCTL  &sk LALT  &sk LGUI    &sk LSFT  &sk LC(RG(LALT))               &kp PG_DN     &kp LEFT        &kp DOWN        &kp RIGHT       &kp ENTER
+        &kp ESC  &sk RALT  &key_repeat  &sk LC(RG(LALT))  &sk GLOBE                 &kp PG_UP   &kp LBKT        &kp UP          &kp RBKT        &kp DEL 
+        &sk LCTL  &sk LALT  &sk LGUI    &sk LSFT  &caps_word                &kp PG_DN     &kp LEFT        &kp DOWN        &kp RIGHT       &kp ENTER
         &kp CAPS   &kp TAB   &kp ENTER   &kp SPC   &none                    &lt SYMB BKSP   &kp LG(Z)      &kp C_PP        &kp LG(LS(Z))      &none 
                                                   &trans  &trans            &trans  &trans
       >;
