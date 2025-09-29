@@ -73,7 +73,7 @@
       bindings = <&kp C_BRI_UP>;
       layers = <DEFAULT>;
     };
-    britup {
+    britup2 {
       timeout-ms = <50>;
       key-positions = <11 12 13>;
       bindings = <&kp C_BRI_UP>;
