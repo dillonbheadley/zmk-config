@@ -42,22 +42,34 @@
 
   combos {
     compatible = "zmk,combos";
+    z {
+      timeout-ms = <50>;
+      key-positions = <11 12>;
+      bindings = <&kp Z>;
+      layers = <DEFAULT>;
+    };
     b {
       timeout-ms = <50>;
       key-positions = <12 13>;
       bindings = <&kp B>;
       layers = <DEFAULT>;
     };
+    cmd {
+      timeout-ms = <50>;
+      key-positions = <6 7>;
+      bindings = <&sk LGUI>;
+      layers = <DEFAULT>;
+    };
+    shrtct {
+      timeout-ms = <50>;
+      key-positions = <7 8>;
+      bindings = <&sk LC(LA(LGUI))>;
+      layers = <DEFAULT>;
+    };
     j {
       timeout-ms = <50>;
       key-positions = <16 17>;
       bindings = <&kp J>;
-      layers = <DEFAULT>;
-    };
-    z {
-      timeout-ms = <50>;
-      key-positions = <11 12>;
-      bindings = <&kp Z>;
       layers = <DEFAULT>;
     };
     slash {
@@ -285,7 +297,7 @@
 
     nav_layer {
       bindings = <
-        &kp ESC  &sk RALT  &key_repeat  &sk LC(RG(LALT))  &sk GLOBE                 &kp PG_UP   &kp LBKT        &kp UP          &kp RBKT        &kp DEL 
+        &kp ESC  &sk RALT  &key_repeat  &sk LC(LA(LGUI))  &sk GLOBE                 &kp PG_UP   &kp LBKT        &kp UP          &kp RBKT        &kp DEL 
         &sk LCTL  &sk LALT  &sk LGUI    &sk LSFT  &caps_word                &kp PG_DN     &kp LEFT        &kp DOWN        &kp RIGHT       &kp ENTER
         &none   &kp TAB   &kp ENTER   &kp SPC   &none                    &lt SYMB BKSP   &kp LG(Z)      &kp C_PP        &kp LG(LS(Z))      &none 
                                                   &none  &none            &none  &none
